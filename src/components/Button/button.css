@@ -1,0 +1,14 @@
+.grid-btn-container
+{
+  text-align: center;
+}
+.grid-btn
+{
+  font-weight: bold;
+  color:#725C3A;
+  border: #ADA8A2 3px solid;
+  border-radius: 10px;
+  font-size: 17px;
+  padding: 10px 26px;
+  margin-bottom: 10px;
+}

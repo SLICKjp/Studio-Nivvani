@@ -1,0 +1,12 @@
+
+.grid-title
+{
+    text-align: center;
+}
+.row {
+  display: flex;
+  gap:45px;
+  justify-content: center;
+  margin-bottom:40px;
+  margin-top: 20px;
+}
