@@ -1,0 +1,24 @@
+.hero-services-container
+{
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+.hero-service-img
+{
+    text-align: center;
+}
+
+.hero-service-heading
+{
+    font-size: 30px;
+    text-align: center;
+}
+.hero-service-text
+{
+    font-size: 20px;
+    width:367px;
+    text-align: center;
+   
+   
+}

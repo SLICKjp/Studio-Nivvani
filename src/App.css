@@ -1,12 +1,9 @@
+
+
 body
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-@font-face {
-  font-family: 'FuturaLtLight';
-  src: 
-    url('./assets/fonts/FuturaLtBTLight.ttf') format('woff2')
-  
+  background-color: #F8F4EF;
 }

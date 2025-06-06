@@ -1,8 +1,24 @@
 .connect-container
 {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.connect-heading,.connect-text
+.connect-heading,.connect-text,.connect-subtext
 {
-font-family:'FuturaLtLight'
+   color:#725C3A;
 }
+.connect-heading
+{
+    font-size: 36px;
+}
+.connect-text,.connect-subtext
+{
+    font-size: 24px;
+}
+.connect-btn-container
+{
+    margin:40px 0px 80px 0px;
+}
+

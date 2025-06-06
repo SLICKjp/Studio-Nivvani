@@ -2,6 +2,8 @@
 .grid-title
 {
     text-align: center;
+    font-size: 36px;
+    color: #725C3A;
 }
 .row {
   display: flex;
@@ -9,4 +11,8 @@
   justify-content: center;
   margin-bottom:40px;
   margin-top: 20px;
+}
+.input-btn-container
+{
+  text-align: center;
 }

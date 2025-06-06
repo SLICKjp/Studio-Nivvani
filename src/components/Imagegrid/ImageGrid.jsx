@@ -22,7 +22,10 @@ const ImageGrid = () => {
         <img src={img_five} alt="" />
         <img src={img_six} alt="" />
       </div>
+
+     <div className="input-btn-container"> 
     <Button name="VIEW OUR PROJECTS"/>
+    </div>
     </div>
   );
 };
