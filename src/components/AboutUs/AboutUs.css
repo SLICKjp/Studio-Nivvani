@@ -1,0 +1,51 @@
+.aboutUs-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* min-height: 100vh; */
+    height: 100vh;
+}
+
+.about-text{
+    width: 50%;
+    height: 665px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-img{
+    
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 70px 0;
+    
+}
+
+.text-heading{
+    font-size: 36px;
+}
+
+.text-body{
+    font-size: 20px;
+    color:#725C3A;
+}
+
+.text-div{
+    margin: 1% 0;
+}
+.text-gr{
+    color: #869174;
+}
+.text-br{
+    color: #725C3A;
+}
+
+.aboutUsBtn{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #ADA8A2;
+    font-size: 16px;
+}

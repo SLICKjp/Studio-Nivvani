@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'FuturaLtLight';
  
-  src: 
-    url('./assets/fonts/FuturaLtBTLight.ttf') format('ttf')
+  src: url('./assets/fonts/FuturaLtBTLight.ttf') format('ttf');
    
   
 }

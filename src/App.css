@@ -1,9 +1,15 @@
 
-
 body
 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #F8F4EF;
+  font-family: 'FuturaLtBTLight';
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'FuturaLtBTLight';
+  src: url('./assets/fonts/FuturaLtBTLight.ttf') format('truetype');
 }

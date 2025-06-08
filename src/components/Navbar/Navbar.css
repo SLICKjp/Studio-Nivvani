@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    z-index: 10;
+    background: transparent;
+    position: sticky;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links{
+    margin: 30px;
+    /* color: #869174; */
+    color: #725C3A;
+    cursor: pointer;
+}
+
+.links:hover{
+    color: #869174;
+    transition: 0.5s ease;
+}
+
+.logo{
+    margin: 40px;
+}
