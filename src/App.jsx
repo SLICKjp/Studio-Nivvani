@@ -1,12 +1,13 @@
 import HomePage from "./pages/HomePage/HomePage.jsx";
-import './assets/fonts/fonts.css';
+// import "./assets/fonts/fonts.css";
+import "./App.css";
 
 function App() {
-  return (
-    <>
-      <HomePage />
-    </>
-  );
+	return (
+		<>
+			<HomePage />
+		</>
+	);
 }
 
 export default App;
