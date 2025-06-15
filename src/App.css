@@ -13,3 +13,8 @@ body
   font-family: 'FuturaLtBTLight';
   src: url('./assets/fonts/FuturaLtBTLight.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'FuturaHvBTHeavy';
+  src: url('./assets/fonts/FuturaHvBTHeavy.ttf') format('truetype');
+}

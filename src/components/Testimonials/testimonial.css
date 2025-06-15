@@ -1,28 +1,31 @@
 .testimonial-container{
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: #725C3A;
+    transform: scale(85%);
 }
 
 .testimonial{
-    height: 90%;
-    width: 25%;
-    font-size: 24px;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
     border-radius: 8px;
     padding: 2%;
     border: 1px solid #E5D2B8;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: auto;
 }
 
 .testimonial-header{
     color: #725C3A;
     font-size: 36px;
     text-align: center;
+    height: 5%;
 }
 
 .testimonial-btn{
@@ -34,13 +37,49 @@
 }
 
 .profile-photo{
-    height: 70px;
-    width: 70px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     margin: auto;
 }
 
 .name{
     text-align: center;
+    font-size: 22px;
+    /* font-weight: 400; */
+    /* font-family: "FuturaHvBTHeavy"; */
 }
 
+.quote-img{
+    height: 50px;
+    width: 50px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.testimonial-text{
+    margin: 15px;
+}
+
+.testimonial-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-slider-wrapper{
+    width: 40%;
+    height: 95%;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.testimonial-slider{
+    display: flex;
+    height: 100%;
+    width: 400%;
+    transition: transform 1s ease-in-out;
+    /* padding: auto; */
+}

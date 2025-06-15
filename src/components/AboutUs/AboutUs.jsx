@@ -13,8 +13,9 @@ const AboutUs = () => {
 					<div className="text-div">
 						Every project we undertake is a thoughtful expression of the
 						client’s personality and vision, meticulously crafted to complement
-						their lifestyle, aspirations and practical needs.
-					</div>{" "}
+						their lifestyle, <br />
+						aspirations and practical needs.
+					</div>
 					<br />
 					<div className="text-div">
 						We believe every space should be unique, comfortable, functional,
@@ -42,8 +43,9 @@ const AboutUs = () => {
 					</div>
 				</div>
 			</div>
-
-			<img className="about-img" src={aboutUsimg} />
+			<div style={{ height: "665px" }}>
+				<img className="about-img" src={aboutUsimg} />
+			</div>
 		</div>
 	);
 };
