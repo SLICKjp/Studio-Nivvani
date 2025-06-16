@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: scale(85%);
 }
 .connect-heading,.connect-text,.connect-subtext
 {
