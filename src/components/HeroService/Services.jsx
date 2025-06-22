@@ -28,17 +28,20 @@ let length = heroserviceData.length;
 
 const Services = () => {
 	return (
-		<div className="hero-services-container">
-			{heroserviceData.map((service, index) => (
-				<>
-					<Service key={index} {...service} />
-					{index < heroserviceData.length - 1 && (
-						<div className={`divider-container-${index}`}>
-							<div className="divider"></div>
-						</div>
-					)}
-				</>
-			))}
+		<div>
+			<div className="sectionHeader">OUR SERVICES</div>
+			<div className="hero-services-container">
+				{heroserviceData.map((service, index) => (
+					<>
+						<Service key={index} {...service} />
+						{index < heroserviceData.length - 1 && (
+							<div className={`divider-container-${index}`}>
+								<div className="divider"></div>
+							</div>
+						)}
+					</>
+				))}
+			</div>
 		</div>
 	);
 };

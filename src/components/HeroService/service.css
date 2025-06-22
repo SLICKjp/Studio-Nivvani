@@ -65,3 +65,14 @@
     top: 0;
     right: 33.75%
 }
+
+.sectionHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #725C3A;
+    font-size: 36px;
+        
+        /* height: 5%; */
+}
