@@ -1,11 +1,11 @@
-import HomePage from "./pages/HomePage/HomePage.jsx";
+import HomePage from "./pages/Homepage/HomePage.jsx"
 // import "./assets/fonts/fonts.css";
 import "./App.css";
 
 function App() {
 	return (
 		<>
-			<HomePage />
+			<HomePage/>
 		</>
 	);
 }
