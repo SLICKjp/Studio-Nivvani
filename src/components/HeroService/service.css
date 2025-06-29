@@ -2,7 +2,7 @@
 {
     display: flex;
     justify-content:space-evenly;
-    height: 500px;
+    height: 400px;
     width: 100%;
     position: relative;
     transform: scale(85%);
@@ -11,13 +11,13 @@
 {
     height: 100px;
     width: 100px;
-    margin: auto;
+    margin: 2.5rem auto;
 }
 
 .hero-service-heading
 {
     font-size: 30px;
-    height: 15%;
+    height: 12%;
     text-align: center;
     margin: 10px 0;
     color: #725C3A;
@@ -34,13 +34,13 @@
 .service-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     width: 30%;
 
 }
 
 .divider{
-    height: 55%;
+    height: 52%;
     width: 2px;
     margin: 0 0.5%;
     background-color: #869174;
@@ -73,6 +73,5 @@
     align-items: center;
     color: #725C3A;
     font-size: 36px;
-        
         /* height: 5%; */
 }

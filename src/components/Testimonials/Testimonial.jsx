@@ -70,10 +70,10 @@ const Testimonial = () => {
 		setCurrentIndex((prev) => (prev - 1 + cards.length) % cards.length);
 	};
 
-	useEffect(() => {
-		const autoSlide = setInterval(handleNext, 5000);
-		return () => clearInterval(autoSlide);
-	}, []);
+	// useEffect(() => {
+	// 	const autoSlide = setInterval(handleNext, 5000);
+	// 	return () => clearInterval(autoSlide);
+	// }, []);
 
 	return (
 		<>

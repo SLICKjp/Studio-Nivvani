@@ -28,7 +28,15 @@ let length = heroserviceData.length;
 
 const Services = () => {
 	return (
-		<div>
+		<div
+			style={{
+				display: "flex",
+				flexDirection: "column",
+				justifyContent: "space-evenly",
+				alignContent: "center",
+				marginBottom: "3rem",
+			}}
+		>
 			<div className="sectionHeader">OUR SERVICES</div>
 			<div className="hero-services-container">
 				{heroserviceData.map((service, index) => (
