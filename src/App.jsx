@@ -1,11 +1,15 @@
-import HomePage from "./pages/Homepage/HomePage.jsx"
+
 // import "./assets/fonts/fonts.css";
 import "./App.css";
+import AppRoutes from "./routes/AppRoutes";
+
 
 function App() {
 	return (
 		<>
-			<HomePage/>
+			<div className="root">
+				<AppRoutes/>
+			</div>
 		</>
 	);
 }
