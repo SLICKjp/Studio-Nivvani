@@ -3,6 +3,7 @@ import footer_logo from "../../assets/Footer/footer_logo.png";
 import mail from "../../assets/Footer/mail.png";
 import insta from "../../assets/Footer/insta.png";
 import linkedin from "../../assets/Footer/linkedin.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -19,10 +20,18 @@ const Footer = () => {
 					</p>
 				</div>
 				<div className="footer-links">
-					<p>About</p>
-					<p>Projects</p>
-					<p>Services</p>
-					<p>Contact</p>
+					<Link>
+						<li className="footer-link">About</li>
+					</Link>
+					<Link>
+						<li className="footer-link">Projects</li>
+					</Link>
+					<Link>
+						<li className="footer-link">Services</li>
+					</Link>
+					<Link to="/contact">
+						<li className="footer-link">Contact</li>
+					</Link>
 				</div>
 				<div className="footer-contact">
 					<p>Contact Information</p>

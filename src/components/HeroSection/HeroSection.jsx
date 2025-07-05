@@ -15,7 +15,7 @@ const HeroSection = () => {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setCurrent((current + 1) % images.length);
-		}, 4000);
+		}, 6000);
 
 		return () => clearTimeout(timer);
 	}, [current]);
