@@ -2,7 +2,7 @@
 {
     display: flex;
     justify-content:space-evenly;
-    height: 400px;
+    min-height: 400px;
     width: 100%;
     position: relative;
     transform: scale(85%);
@@ -36,7 +36,8 @@
     flex-direction: column;
     justify-content: flex-end;
     width: 30%;
-
+    height: 60%;
+    margin-bottom: 2rem;
 }
 
 .divider{
@@ -74,4 +75,10 @@
     color: #725C3A;
     font-size: 36px;
         /* height: 5%; */
+}
+
+@media only screen and (min-width: 1920px) {
+    .service-container{
+        height: 40%;
+    }
 }

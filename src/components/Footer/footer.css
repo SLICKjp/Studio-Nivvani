@@ -30,7 +30,7 @@
 }
 
 .footer-logo img{
-   height: 60%;
+   height: 40%;
    width: 60%;
 }
 
@@ -73,6 +73,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .footer-socials{
@@ -93,3 +94,26 @@
     align-items: center;
 }
 
+.footer-icon{
+    height: 18px;
+    width: 18px;
+}
+
+.footer-mail-text{
+    transform: translateX(1rem);
+}
+
+.studio-logo{
+    transform: translate(-1rem);
+}
+
+.footer-link{
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 1920px) {
+   .studio-logo{
+    width: 50% !important;
+    height: 40% !important;
+   }
+}

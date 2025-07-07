@@ -402,6 +402,11 @@ const Services = () => {
 								return (
 									<>
 										<Service {...process} />
+										{(index === 0 || index === 1 || index === 3) && (
+											<div className="divider-container">
+												<div className="divider"></div>
+											</div>
+										)}
 									</>
 								);
 							})}

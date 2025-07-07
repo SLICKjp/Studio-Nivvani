@@ -10,7 +10,7 @@ const Footer = () => {
 		<div className="footer-container">
 			<div className="footer-sub-container-1">
 				<div className="footer-logo">
-					<img src={footer_logo} alt="" />
+					<img className="studio-logo" src={footer_logo} alt="" />
 					<p className="footer-text">
 						At Studio Nivvani, we bring your vision <br />
 						to life- from homes to commercial <br />
@@ -36,12 +36,12 @@ const Footer = () => {
 				<div className="footer-contact">
 					<p>Contact Information</p>
 					<div className="footer-mail">
-						<img src={mail} alt="" />
+						<img className="footer-icon" src={mail} alt="" />
 						<p className="footer-mail-text">studionivvani@gmail.com</p>
 					</div>
 					<div className="footer-socials">
-						<img src={insta} alt="" srcset="" />
-						<img src={linkedin} alt="" srcset="" />
+						<img className="footer-icon" src={insta} alt="" srcset="" />
+						<img className="footer-icon" src={linkedin} alt="" srcset="" />
 					</div>
 				</div>
 			</div>

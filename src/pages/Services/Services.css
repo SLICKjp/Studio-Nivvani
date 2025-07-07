@@ -40,6 +40,7 @@
     width: 90%;
     height: 80vh;
     margin: 3rem auto;
+    transform: scale(85%);
 }
 
 .services-sections{
@@ -155,4 +156,20 @@
 .design-process-header{
     font-size: 36px;
     text-align: center;
+}
+
+.divider-container{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.design-process-section{
+    height: 100vh;
+}
+
+.process-container{
+    height: 85%;
+    transform: scale(85%);
 }
