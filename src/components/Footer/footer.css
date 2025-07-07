@@ -15,7 +15,7 @@
 {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     height: 50%;
     width: 80%;
@@ -65,7 +65,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 90%;
+    height: 70%;
 }
 
 .footer-mail{
@@ -115,5 +115,9 @@
    .studio-logo{
     width: 50% !important;
     height: 40% !important;
+   }
+
+   .footer-contact{
+    height: 50% !important;
    }
 }
