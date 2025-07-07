@@ -36,7 +36,7 @@ const Footer = () => {
 				<div className="footer-contact">
 					<p>Contact Information</p>
 					<div className="footer-mail">
-						<img className="footer-icon" src={mail} alt="" />
+						<img className="footer-icon" id="mail" src={mail} alt="" />
 						<p className="footer-mail-text">studionivvani@gmail.com</p>
 					</div>
 					<div className="footer-socials">

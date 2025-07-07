@@ -9,6 +9,7 @@
     align-items: center;
     height: 50vh;
     font-size: 18px;
+    font-weight: bold;
     
 }
 .footer-sub-container-1
@@ -31,7 +32,7 @@
 
 .footer-logo img{
    height: 40%;
-   width: 60%;
+   width: 40%;
 }
 
 .footer-logo p{
@@ -81,7 +82,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width:40%;
+    width:26%;
 
 }
 
@@ -95,10 +96,14 @@
 }
 
 .footer-icon{
-    height: 18px;
-    width: 18px;
+    height: 20px;
+    width: 20px;
 }
 
+#mail{
+    height: 23px;
+    width: 23px;
+}
 .footer-mail-text{
     transform: translateX(1rem);
 }
@@ -112,10 +117,10 @@
 }
 
 @media only screen and (min-width: 1920px) {
-   .studio-logo{
+   /* .studio-logo{
     width: 50% !important;
     height: 40% !important;
-   }
+   } */
 
    .footer-contact{
     height: 50% !important;
