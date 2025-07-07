@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: scale(85%);
 }
 .contact-box {
   border: 2px solid #e4d5bf;
@@ -51,6 +52,7 @@ label {
 .contact-text-container {
   text-align: center;
   color: #725c3a;
+  
 }
 .contact-img
 {
