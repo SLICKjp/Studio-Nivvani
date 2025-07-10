@@ -20,13 +20,13 @@ const Footer = () => {
 					</p>
 				</div>
 				<div className="footer-links">
-					<Link>
+					<Link to="/about">
 						<li className="footer-link">About</li>
 					</Link>
 					<Link>
 						<li className="footer-link">Projects</li>
 					</Link>
-					<Link>
+					<Link to="/services">
 						<li className="footer-link">Services</li>
 					</Link>
 					<Link to="/contact">

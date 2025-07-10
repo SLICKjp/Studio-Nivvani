@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
 import aboutUsimg from "../../assets/About/about.png";
+import { Link } from "react-router-dom";
 const AboutUs = () => {
 	return (
 		<div className="aboutUs-container">
@@ -39,7 +40,9 @@ const AboutUs = () => {
 					</div>
 					<br />
 					<div className="aboutUs-btn">
+						<Link to="/about">
 						<button className="aboutUsBtn">LEARN MORE</button>
+						</Link>
 					</div>
 				</div>
 			</div>
