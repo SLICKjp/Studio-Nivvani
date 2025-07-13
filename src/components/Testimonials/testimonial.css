@@ -1,5 +1,5 @@
 .testimonial-container{
-    height: 85vh;
+    height: 630px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -13,7 +13,7 @@
     width: 100%;
     font-size: 20px;
     border-radius: 8px;
-    padding: 1% 1.5%;
+    padding: 23px;
     border: 1px solid #E5D2B8;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@
     color: #725C3A;
     font-size: 36px;
     text-align: center;
-    height: 5vh;
+    height: 75px;
 }
 
 .testimonial-btn{
@@ -34,6 +34,10 @@
     border: 1px solid #E5D2B8;
     height: 60px;
     width: 70px;
+}
+
+.logo-img{
+    height: 150px;
 }
 
 .profile-photo{
@@ -46,6 +50,7 @@
 .name{
     text-align: center;
     font-size: 22px;
+    height: 15px;
     /* font-weight: 400; */
     /* font-family: "FuturaHvBTHeavy"; */
 }
@@ -58,12 +63,13 @@
 }
 
 .testimonial-text{
-    margin: 15px;
+    padding: 15px;
     font-size: 16px;
+    height: 380px;
 }
 
 .testimonial-section{
-    height: 100vh;
+    height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -84,13 +90,4 @@
     width: 400%;
     transition: transform 1s ease-in-out;
     /* padding: auto; */
-}
-
-@media only screen and (min-width: 1920px) {
-    .testimonial-container{
-        height: 80vh;
-    }
-    .testimonial-text{
-        font-size: 20px;
-    }
 }
