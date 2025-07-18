@@ -18,3 +18,7 @@ body
   font-family: 'FuturaHvBTHeavy';
   src: url('./assets/fonts/FuturaHvBTHeavy.ttf') format('truetype');
 }
+
+.root{
+  overflow-x: hidden;
+}
