@@ -8,18 +8,17 @@ import { Link } from "react-router-dom";
 const Footer = () => {
 	return (
 		<div className="footer-container">
-			<div className="footer-sub-container-1">
-				<div className="footer-logo">
-					<img className="studio-logo" src={footer_logo} alt="" />
+			<div className="footer-subcontainer">
+				<div className="footer-subsection img-para">
+					<img className="footer-logo" src={footer_logo} />
 					<p className="footer-text">
 						At Studio Nivvani, we bring your vision <br />
-						to life- from homes to commercial <br />
-						spaces,styling to staging-with <br />
-						creative,practical and cost-conscious
+						to life- from homes to commercial <br /> spaces,styling to
+						staging-with <br /> creative,practical and cost-conscious
 						<br /> design.
 					</p>
 				</div>
-				<div className="footer-links">
+				<div className="footer-subsection site-links">
 					<Link to="/about">
 						<li className="footer-link">About</li>
 					</Link>
@@ -33,20 +32,19 @@ const Footer = () => {
 						<li className="footer-link">Contact</li>
 					</Link>
 				</div>
-				<div className="footer-contact">
-					<p>Contact Information</p>
-					<div className="footer-mail">
-						<img className="footer-icon" id="mail" src={mail} alt="" />
-						<p className="footer-mail-text">studionivvani@gmail.com</p>
-					</div>
-					<div className="footer-socials">
-						<img className="footer-icon" src={insta} alt="" srcset="" />
-						<img className="footer-icon" src={linkedin} alt="" srcset="" />
-					</div>
+				<div className="footer-subsection site-contact">
+					<li className="contact-section-link">Contact Information</li>
+					<li className="contact-section-link">
+						<img className="contact-icon" src={mail} /> studionivvani@gmail.com
+					</li>
+					<li className="contact-section-link">
+						<img className="contact-icon" src={insta} />
+						<img className="contact-icon" src={linkedin} />
+					</li>
 				</div>
 			</div>
-			<div className="footer-sub-container-2">
-				<span>© Studio Nivvani. All rights reserved</span>
+			<div className="copyright-text">
+				<p>© Studio Nivvani. All rights reserved</p>
 			</div>
 		</div>
 	);
