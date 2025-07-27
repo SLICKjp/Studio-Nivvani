@@ -178,10 +178,26 @@
 }
 
 .design-process-section{
-    height: 100vh;
+    height: 700px;
+    margin-bottom: 3rem;
 }
 
 .process-container{
-    height: 85%;
+    height: 90%;
     transform: scale(85%);
+}
+
+
+
+@media only screen and (max-width: 1320px) {
+.services-sections {
+        width: 90%;
+}
+
+}
+
+@media only screen and (max-width: 1220px) {
+    .services-sections {
+        width: 95%;
+    }
 }

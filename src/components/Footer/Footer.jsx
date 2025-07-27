@@ -38,8 +38,22 @@ const Footer = () => {
 						<img className="contact-icon" src={mail} /> studionivvani@gmail.com
 					</li>
 					<li className="contact-section-link">
-						<img className="contact-icon" src={insta} />
-						<img className="contact-icon" src={linkedin} />
+						<a
+							className="service-logo"
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://www.instagram.com/studionivvani?igsh=MWl3cDhteDFhM25raQ=="
+						>
+							<img className="contact-icon service-logo" src={insta} />
+						</a>
+						<a
+							className="service-logo"
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://www.linkedin.com/in/jaini-joshi-ab038b184?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+						>
+							<img className="contact-icon service-logo" src={linkedin} />
+						</a>
 					</li>
 				</div>
 			</div>

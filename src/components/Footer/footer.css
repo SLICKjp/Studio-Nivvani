@@ -58,7 +58,7 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* width: 25%; */
+    width: 25% !important;
 }
 
 .contact-section-link{
@@ -76,4 +76,13 @@ li{
     color: #2b4402;
     -webkit-transition: color 1s ease;
     transition: color 1s ease;
+}
+
+
+
+.service-logo{
+    height: 22px !important;
+    width: 22px !important;
+    cursor: pointer;
+    margin-right: 1rem;
 }

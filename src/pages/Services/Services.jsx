@@ -183,8 +183,10 @@ const Services = () => {
 		},
 		{
 			title: "Concept Design",
+			// description:
+			// 	"We craft mood boards, produce reference images, layouts and style directions to align with your vision and budget",
 			description:
-				"We craft mood boards, produce reference images, layouts and style directions to align with your vision and budget",
+				"We create mood boards, references, and style layouts to match your vision and budget",
 			image: process2,
 		},
 		{
@@ -392,25 +394,24 @@ const Services = () => {
 							);
 						}
 					})}
-
-					<div className="design-process-section">
-						<div className="design-process-header">
-							Our Five Step Design Process
-						</div>
-						<div className="process-container">
-							{servicesProcessArray.map((process, index) => {
-								return (
-									<>
-										<Service {...process} />
-										{(index === 0 || index === 1 || index === 3) && (
-											<div className="divider-container">
-												<div className="divider"></div>
-											</div>
-										)}
-									</>
-								);
-							})}
-						</div>
+				</div>
+				<div className="design-process-section">
+					<div className="design-process-header">
+						Our Five Step Design Process
+					</div>
+					<div className="process-container">
+						{servicesProcessArray.map((process, index) => {
+							return (
+								<>
+									<Service {...process} />
+									{(index === 0 || index === 1 || index === 3) && (
+										<div className="divider-container">
+											<div className="divider"></div>
+										</div>
+									)}
+								</>
+							);
+						})}
 					</div>
 				</div>
 			</div>
