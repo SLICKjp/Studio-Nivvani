@@ -8,13 +8,28 @@ import "./contact.css";
 
 const ContactUs = () => {
   const form = useRef();
+ 
 
   const sendEmail = (e) => {
-    e.preventDefault();
 
+    e.preventDefault();
+ 
     const countryCode = form.current.country_code.value;
-    const phone = form.current.user_phone.value;
+    const phone = form.current.user_phone.value.trim();
     const fullPhone = `${countryCode} ${phone}`;
+
+    const phoneRegexByCountry = {
+    "+91": /^[6-9]\d{9}$/,        // India: 10 digits, starts with 6-9
+    "+1": /^\d{10}$/,             // USA: 10 digits
+    "+61": /^\d{9}$/              // Australia: 9 digits (excluding leading 0)
+  };
+
+const selectedRegex = phoneRegexByCountry[countryCode];
+
+  if (!selectedRegex.test(phone)) {
+    alert("Please enter a valid phone number for the selected country.");
+    return;
+  }
 
     const templateParams = {
       fullName: form.current.fullName.value,
@@ -66,14 +81,31 @@ const ContactUs = () => {
               Full Name <span className="contact-asterik">*</span>
             </label>
             <p>
-              <input className="contact-box" type="text" name="fullName" required />
+              <input 
+              className="contact-box"
+              type="text" 
+              name="fullName" 
+              required
+              pattern="[A-Za-z\s'-]{2,}"
+              title="Please enter a valid name"
+              />
+             
             </p>
 
             <label>
               Email <span className="contact-asterik">*</span>
             </label>
             <p>
-              <input className="contact-box" type="email" name="email" required />
+              <input 
+              className="contact-box" 
+              type="email" 
+              name="email" 
+              required 
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              title="Please enter a valid email address"
+              
+              />
+            
             </p>
 
             <label>
@@ -89,10 +121,10 @@ const ContactUs = () => {
                 className="user_phone"
                 type="tel"
                 name="user_phone"
-                pattern="[0-9]{6,15}"
                 maxLength="15"
                 required
               />
+             
             </p>
 
             <label>
@@ -104,8 +136,12 @@ const ContactUs = () => {
                 name="message"
                 rows="4"
                 cols="50"
+                minLength={10}
+                maxLength={1000}
+                title="Message should be at least 10 characters long"
                 required
               ></textarea>
+           
             </p>
 
             <div className="contact-btn-container">
