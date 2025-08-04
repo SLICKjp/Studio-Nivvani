@@ -15,17 +15,17 @@ const items = [
   {
     image: fa,
     title: "Functional Aesthetics",
-    text: "We create spaces that are both beautiful and practical-blending frorm and function to suit your lifestyle with comfort,efficiency and visual harrmony",
+    text: "We create spaces that blend beauty and function—crafted for comfort, efficiency, and harmony.",
   },
   {
     image: pd,
     title: "Personalized Design",
-    text: "Every space is a reflection of you-thoughtfully tailored to express your personality,values and the way you live or work",
+    text: "Every space reflects you—thoughtfully tailored to express your personality, values, and lifestyle.",
   },
   {
     image: cb,
     title: "Conscious Budgeting",
-    text: "Great design doesn’t have to exceed your budget.We deliver smart,creative solutions that align with your goals and resources without compromosing on quality.",
+    text: "Great design fits your budget—smart, creative solutions without ever compromising on quality or goals.",
   },
   {
     image: aes,
@@ -35,7 +35,7 @@ const items = [
   {
     image: sens,
     title: "Sensitivity",
-    text: "Each project is crafted with empath-respecting people,culture and environment to create meaningful,responsive spaces",
+    text: "Each project is crafted with empathy—respecting people, culture, and environment to create meaningful spaces.",
   },
 ];
 
@@ -110,49 +110,44 @@ const About = () => {
             ))}
           </div>
 
+        </div>
+
+        <div className="jaini-about-container">
+          <div className="studio-about-img-container">
+            <img src={Jaini} alt="" className="studio-image" />
           </div>
 
-          <div className="jaini-about-container">
-            <div className="studio-about-img-container">
-              <img src={Jaini} alt="" className="studio-image" />
-            </div>
+          <div className="jaini-about-text-container">
+            <h2 className="studio-title">MEET OUR DESIGNER - <span className="jaini-subtext">JAINI JOSHI </span></h2>
+            <p className="studio-subtext">
+              Studio Nivvani|Founder and Principal Designer
+            </p>
 
-            <div className="jaini-about-text-container">
-              <h2 className="studio-title">MEET OUR DESIGNER - <span className="jaini-subtext">JAINI JOSHI </span></h2>
-              <p className="studio-subtext">
-                Studio Nivvani|Founder and Principal Designer
+            <div className="studio-subtext-container">
+              <p className="studio-subtext-one">
+                An architect by education, an interior designer by
+                passion—Jaini Joshi brings over 18 years of expertise in
+                crafting transformative spaces. With global experience across
+                US and India she blends diverse styles to deliver designs that
+                are innovative, practical and timeless.
               </p>
-
-              <div className="studio-subtext-container">
-                <p className="studio-subtext-one">
-                  An architect by education, an interior designer by
-                  passion—Jaini Joshi brings over 20 years of expertise in
-                  crafting transformative spaces. With global experience across
-                  US and India she blends diverse styles to deliver designs that
-                  are innovative, practical and timeless.
-                </p>
-                <p className="studio-subtext-two">
-                  Jaini began her career in New York, working on range of
-                  architectural projects and gaining invaluable international
-                  exposure. In 2010, she established Studio Nivvani in India
-                  with a vision to create spaces that seamlessly unite
-                  aesthetics and functionality.
-                </p>
-                <p className="studio-subtext-three">
-                  Her portfolio spans corporate, residential and hospitality
-                  spaces, each reflecting her signature blend of innovation,
-                  practicality and sustainability. With a versatile approach,
-                  Jaini Joshi has developed a keen eye for optimizing layouts
-                  and creating spaces that ae both beautiful and highly
-                  functional.
-                </p>
-              </div>
+              <p className="studio-subtext-two">
+                Jaini began her interior design career in New York, working on a range of architectural & interior projects and gaining invaluable international exposure. In 2014, she established Studio Nivvani in India with a vision to create spaces that seamlessly blend aesthetics and functionality.
+              </p>
+              <p className="studio-subtext-three">
+                Her portfolio spans corporate, residential and hospitality spaces,
+                each reflecting her signature blend of innovation, practicality and
+                sustainability. With a versatile approach, Jaini Joshi has developed a
+                keen eye for optimizing layouts and creating spaces that are both
+                beautiful and highly functional.
+              </p>
             </div>
           </div>
-        
+        </div>
+
       </div>
-     <Connect/>
-     <Footer/>
+      <Connect />
+      <Footer />
     </>
   );
 };

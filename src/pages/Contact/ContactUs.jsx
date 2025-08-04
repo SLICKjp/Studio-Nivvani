@@ -68,7 +68,7 @@ const selectedRegex = phoneRegexByCountry[countryCode];
           excited to learn more about your project and vision.
         </p>
         <p className="contact-heading-three">
-          Please fill out the form below to give us an overview of your project.
+          Please leave your enquiry below.
         </p>
       </div>
 

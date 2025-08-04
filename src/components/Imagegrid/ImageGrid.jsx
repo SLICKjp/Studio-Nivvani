@@ -6,6 +6,7 @@ import img_four from "../../assets/Hero/img_four.png";
 import img_five from "../../assets/Hero/img_five.png";
 import img_six from "../../assets/Hero/img_six.png";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const ImageGrid = () => {
 	return (
@@ -23,7 +24,9 @@ const ImageGrid = () => {
 			</div>
 
 			<div className="input-btn-container">
+				<Link to='/projects'>
 				<Button name="VIEW OUR PROJECTS" />
+				</Link>
 			</div>
 		</div>
 	);

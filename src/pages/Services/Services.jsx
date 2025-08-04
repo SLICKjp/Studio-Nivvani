@@ -102,7 +102,7 @@ const Services = () => {
 			serviceNumber: 4,
 			serviceHeader: "Expert interior design - wherever you are.",
 			serviceData:
-				"Our virtual service is a convienient, budget-friendly way to bring professional design into your space, no matter your location. Everything is delivered online, giving you the tools to implement your design confidently",
+				"Our virtual design service offers a convenient, budget-friendly way to access professional design from anywhere. Everything is delivered online, empowering you with a personalised plan and tools to confidently transform your space.",
 			servicePoints: [
 				"Customized Design Plan",
 				"Floor Plans & Furniture Layouts",
@@ -145,7 +145,7 @@ const Services = () => {
 				"Art & Accessory Placement",
 				"Color Neutralization & Mood Setting",
 				"On-Site Styling for Showings & Photos",
-				"Short-Term Decor Sourcing (as needed)",
+				"Decor Sourcing (as per need)",
 			],
 			serviceFooter:
 				"Perfect for real estate listings, open houses, show flats, and Airbnb prep.",
@@ -164,7 +164,7 @@ const Services = () => {
 				"Material & Finish Selection",
 				"Contractor & Vendor Coordination",
 				"Project Oversight",
-				"Final Styling & Turnkey Handover",
+				"Final Styling & Handover",
 			],
 			serviceFooter:
 				"Perfect for kitchen makeovers, bathroom upgrades, or a full interior refresh",

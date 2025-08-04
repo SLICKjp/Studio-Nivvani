@@ -22,7 +22,7 @@ const AboutUs = () => {
 						We believe every space should be unique, comfortable, functional,
 						visually captivating-and achievable within a realistic budget By
 						seamlessly blending creativity with practicality, we ensure that
-						that beauty and function work hand-in-hand without compromising
+						that beauty and function work hand-in-hand,without compromising on
 						financial considerations.
 					</div>
 					<br />
