@@ -8,6 +8,9 @@
     background: transparent;
     position: sticky;
 }
+.logo{
+    margin: 40px;
+}
 
 .nav-links{
     display: flex;
@@ -21,6 +24,10 @@
     /* color: #869174; */
     color: #725C3A;
     cursor: pointer;
+    position: relative;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .links:hover{
@@ -28,6 +35,22 @@
     transition: 0.5s ease;
 }
 
-.logo{
-    margin: 40px;
+.links.active {
+ 
+  border-bottom:none; 
+  color: #6C8C6B;
+  
+}
+.links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #869174;
+    transition: width 0.3s ease-in-out;
+}
+.links:hover::after {
+    width: 100%;
 }
