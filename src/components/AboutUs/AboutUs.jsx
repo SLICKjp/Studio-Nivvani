@@ -19,10 +19,10 @@ const AboutUs = () => {
 					</div>
 					<br />
 					<div className="text-div">
-						We believe every space should be unique, comfortable, functional,
-						visually captivating-and achievable within a realistic budget By
+						We believe every space should be unique, comfortable, functional and
+						visually captivating while remaining achievable within a realistic budget.By
 						seamlessly blending creativity with practicality, we ensure that
-						that beauty and function work hand-in-hand,without compromising on
+						that beauty and function go hand-in-hand,without compromising on
 						financial considerations.
 					</div>
 					<br />
