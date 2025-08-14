@@ -36,8 +36,8 @@
 
 
 .footer-logo{
-    width: 60%;
-    transform: translateX(-16px);
+    width:336px;
+    transform: translateX(-19px);
 }
 
 li{
@@ -51,6 +51,7 @@ li{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
     /* width: 25%; */
 }
 
@@ -59,6 +60,7 @@ li{
     flex-direction: column;
     justify-content: space-between;
     width: 25% !important;
+    margin-top: 20px;
 }
 
 .contact-section-link{

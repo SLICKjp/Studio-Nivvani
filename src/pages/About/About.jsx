@@ -30,7 +30,7 @@ const items = [
   {
     image: aes,
     title: "Aesthetics",
-    text: "We design for longevity-using high-quality,eco-conscious materials that ensure lasting style and function.",
+    text: "We design for longevity—using high-quality,eco-conscious materials that ensure lasting style and function.",
   },
   {
     image: sens,
@@ -71,7 +71,7 @@ const About = () => {
                 aesthetics with everyday practicality.
               </p>
               <p className="studio-subtext-two">
-                From bungalows and apartments to offices, restaurants, and
+                From bungalows and apartments to offices, restaurants,and
                 clinics, our portfolio reflects a commitment to crafting spaces
                 that are as functional as they are beautiful-always tailored to
                 real needs and real budgets.
@@ -80,9 +80,9 @@ const About = () => {
                 At Studio Nivvani, we believe great design doesn’t just fill a
                 space: it transforms it. Every project is a unique story, shaped
                 with sensitivity to materials, people and place - crafting
-                environments that feel lived loved and lasting
+                environments that feel lived,loved and lasting.
               </p>
-              <p>Timeless. Thoughtful . Tailored to you.</p>
+              <p>Timeless . Thoughtful . Tailored to you.</p>
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@ const About = () => {
               <p className="studio-subtext-one">
                 An architect by education, an interior designer by
                 passion—Jaini Joshi brings over 18 years of expertise in
-                crafting transformative spaces. With global experience across
+                crafting transformative spaces. With global experience across the
                 US and India she blends diverse styles to deliver designs that
                 are innovative, practical and timeless.
               </p>

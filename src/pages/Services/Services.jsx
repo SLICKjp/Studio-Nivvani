@@ -45,64 +45,64 @@ const Services = () => {
 	const interiorArray = [
 		{
 			serviceNumber: 1,
-			serviceHeader: "Start to-finish transformation for your entire space",
+			serviceHeader: "Start-to-Finish Transformation for Your Entire Space",
 			serviceData:
-				"This all-inclusive service is perfect for clients looking for a complete interior makeover- from the very first idea to the final walkthrough.We manage every detail to ensire a seamless, stress- free experience",
+				"This all-inclusive service is perfect for clients looking for a complete interior makeover — from the very first idea to the final walkthrough. We manage every detail to ensure a seamless, stress-free experience.",
 			servicePoints: [
 				"In-depth Design Consultation",
-				"Mood Boards & concept development",
+				"Mood Boards & Concept development",
 				"Space Planning & Furniture Layout",
 				"Sourcing & Procurement",
-				"Coordination with Contractore & Vendors",
+				"Coordination with Contractors & Vendors",
 				"On-site Installation & Styling",
 			],
 			serviceImg: img1,
 			serviceFooter:
-				"Ideal for full-home projects, new builds, luxury aprtments, or vacation properties.",
+				"Ideal for full-home projects, new builds, luxury apartments, or vacation properties.",
 			designSubtype: false,
 			subtype: [corporate, healthcare, retail, industrial],
 		},
 		{
 			serviceNumber: 2,
-			serviceHeader: "Personalized design, one room at a time.",
+			serviceHeader: "Personalized Design, One Room at a Time.",
 			serviceData:
-				"Whether it's your living room, bedroom, or home office, this flexible service is designed for clients seeking expert guidance on specific rooms. Start small and expand as your vison grows.",
+				"Whether it's your living room, bedroom, or home office, this flexible service is designed for clients seeking expert guidance on specific rooms. Start small and expand as your vision grows.",
 			servicePoints: [
 				"Personalized Design Consultation",
 				"Room Layout & Space Planning",
-				"Paint & Lightning Recommendations",
+				"Paint & Lighting Recommendations",
 				"Curated Shopping List",
 				"Styling Guidelines for Finishing Touches",
 			],
 			serviceFooter:
-				"Add more rooms at your own pace- build your dream space step by step",
+				"Add more rooms at your own pace — build your dream space step by step.",
 			serviceImg: img2,
 			designSubtype: false,
 			subtype: [corporate, healthcare, retail, industrial],
 		},
 		{
 			serviceNumber: 3,
-			serviceHeader: "Functional design that elevates your brand.",
+			serviceHeader: "Functional Design that elevates your brand.",
 			serviceData:
-				"We create inspiring, high performance commercial spaces that reflect your brand identity while enhancing productivity and client experience.",
+				"We create inspiring, high-performance commercial spaces that reflect your brand identity while enhancing productivity and client experience.",
 			servicePoints: [
 				"Brand-Aligned Concept Development",
 				"Strategic Space Planning",
 				"Furniture & Finish Selection",
 				"Lighting Design & Ambience Planning",
-				"Accessibilty & Safety Compliance",
+				"Accessibility & Safety Compliance",
 			],
 			serviceFooter:
-				"Perfect for business seeking a professional, impactful environment",
+				"Perfect for businesses seeking a professional, impactful environment.",
 			serviceImg: img3,
 			designSubtype: true,
 			subtype: [corporate, healthcare, retail, industrial],
 		},
 		{
 			serviceNumber: 4,
-			serviceHeader: "Expert interior design - wherever you are.",
+			serviceHeader: "Expert Interior Design––Wherever You Are.",
 			serviceData:
-				"Our virtual design service offers a convenient, budget-friendly way to access professional design from anywhere. Everything is delivered online, empowering you with a personalised plan and tools to confidently transform your space.",
+				"Our virtual design service offers a convenient, budget-friendly way to access professional design from anywhere. Everything is delivered online, empowering you with a personalized plan and tools to confidently transform your space.",
 			servicePoints: [
 				"Customized Design Plan",
 				"Floor Plans & Furniture Layouts",
@@ -118,9 +118,9 @@ const Services = () => {
 		},
 		{
 			serviceNumber: 5,
-			serviceHeader: "Styling that speaks your style",
+			serviceHeader: "Styling That Speaks Your Style",
 			serviceData:
-				"The smallest details often make the biggest impact. Whether you're settling into a new home or just feel like your space needs a refresh, our styling service brings in those finishing touches that make your space deel intentionally yours. We layer in color, texture, decor, and personality-making your home feels cohesive, elevated and welcoming.",
+				"The smallest details often make the biggest impact. Whether you're settling into a new home or just feel like your space needs a refresh, our styling service brings in those finishing touches that make your space feel intentionally yours. We layer in color, texture, decor, and personality — making your home feel cohesive, elevated, and welcoming.",
 			servicePoints: [
 				"Handpicked Accessories & Decorative Elements",
 				"Artwork & Wall Styling",
@@ -129,16 +129,16 @@ const Services = () => {
 				"Final Room Arrangement & Styling Support",
 			],
 			serviceFooter:
-				"Great for everyday living, special events, or just because your space deserves more",
+				"Great for everyday living, special events, or just because your space deserves more.",
 			designSubtype: false,
 			serviceImg: img5,
 			subtype: [corporate, healthcare, retail, industrial],
 		},
 		{
 			serviceNumber: 6,
-			serviceHeader: "Style that helps your space sell",
+			serviceHeader: "Style That Helps Your Space Sell",
 			serviceData:
-				"Getting your property ready to list? We highlight your home's best features using light styling, layout optimization, and neutral visual appeal- so buyers can instantly see it's potential.",
+			"Getting your property ready to list ? We highlight your home's best features using light styling, layout optimization, and neutral visual appeal — so buyers can instantly see its potential.",
 			servicePoints: [
 				"Furniture Layout for Flow & Function",
 				"Light Decor & Accent Styling",
@@ -155,11 +155,11 @@ const Services = () => {
 		},
 		{
 			serviceNumber: 7,
-			serviceHeader: "A fresh take on the spaces you live in.",
+			serviceHeader: "A Fresh Take on the Spaces You Live In.",
 			serviceData:
-				"Our interior renovation service focuses on updating and elevating the look, feel, and function of your home. Whether it's reworking layouts, upgrading materials, or refining finishes, we guide the entire process-bringing new energy into familiar spaces.",
+				"Our interior renovation service focuses on updating and elevating the look, feel, and function of your home. Whether it's reworking layouts, upgrading materials, or refining finishes, we guide the entire process — bringing new energy into familiar spaces.",
 			servicePoints: [
-				"Design Consultation & Site Assesment",
+				"Design Consultation & Site Assessment",
 				"Space Planning & Layout Optimization",
 				"Material & Finish Selection",
 				"Contractor & Vendor Coordination",
@@ -167,7 +167,7 @@ const Services = () => {
 				"Final Styling & Handover",
 			],
 			serviceFooter:
-				"Perfect for kitchen makeovers, bathroom upgrades, or a full interior refresh",
+				"Perfect for kitchen makeovers, bathroom upgrades, or a full interior refresh.",
 			designSubtype: false,
 			serviceImg: img7,
 			subtype: [corporate, healthcare, retail, industrial],
@@ -178,7 +178,7 @@ const Services = () => {
 		{
 			title: "Discovery & Consultation",
 			description:
-				"We understand clinet's requirements, intentions, style and ensure safety, budget and timeline",
+				"We understand clients requirements, intentions, style, and ensure safety, budget and timeline",
 			image: process1,
 		},
 		{
@@ -192,19 +192,19 @@ const Services = () => {
 		{
 			title: "Design and Detail",
 			description:
-				"We finalize designs, materials and specifications-balancing creativity with cost effectiveness",
+				"We finalize designs, materials,and specifications-balancing creativity with cost effectiveness",
 			image: process3,
 		},
 		{
-			title: "Execution and installation",
+			title: "Execution and Installation",
 			description:
-				"We manage execution with trusted teams, maintaining quality, timelines and budget control",
+				"We manage execution with trusted teams, maintaining quality, timelines,and budget control",
 			image: process4,
 		},
 		{
 			title: "Style and Deliver",
 			description:
-				"We style the space with curate peices and hand over a fully finished, beautiful environment",
+				"We style the space with curated pieces and hand over a fully finished, beautiful environment",
 			image: process5,
 		},
 	];

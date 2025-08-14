@@ -5,13 +5,14 @@ import rishin_patel from "../../assets/Testimonials/Rishin.jpeg";
 import rawats from "../../assets/Testimonials/rawats.jpeg";
 import vimisha_patel from "../../assets/Testimonials/Vimisha.jpeg";
 import quote from "../../assets/Testimonials/Quotes.png";
+import rishin_one from "../../assets/Testimonials/rishin_one.jpeg"
 
 const cards = [
 	{
 		title: "Rishin Patel",
 		content:
 			"Working with Jaini Joshi was a great experience from the start to finish. From the initial consultation to the final touches, she demonstrated professionalism, creativity, and attention to detail. What I like about Jaini is that she listened to our needs and provided thoughtful recommendations that balanced both aesthetics and functionality. She is not rigid with her design and is very flexible to our recommendations. Our new office is now more welcoming which is reflected from our Clients’ countless compliments. I highly recommend Jaini for anyone looking to elevate their office design into something beyond their imagination.",
-		img: rishin_patel,
+		img: rishin_one,
 	},
 	{
 		title: "Dr Vimisha Patel",

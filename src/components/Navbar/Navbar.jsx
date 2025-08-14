@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/Navbar/logo.png";
+import logo_one from "../../assets/Navbar/logo_one.png"
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -11,7 +12,7 @@ const Navbar = () => {
 		<div className="navbar">
 			<div className="nav-logo">
 				<Link to='/'>
-					<img className="logo" src={logo} alt="Logo" />
+					<img className="logo" src={logo_one} alt="Logo" />
 				</Link>
 			</div>
 			<div className="nav-links">

@@ -4,13 +4,14 @@ import mail from "../../assets/Footer/mail.png";
 import insta from "../../assets/Footer/insta.png";
 import linkedin from "../../assets/Footer/linkedin.png";
 import { Link } from "react-router-dom";
+import footer_logo_one from "../../assets/Footer/footer_logo_one.png"
 
 const Footer = () => {
 	return (
 		<div className="footer-container">
 			<div className="footer-subcontainer">
 				<div className="footer-subsection img-para">
-					<img className="footer-logo" src={footer_logo} />
+					<img className="footer-logo" src={footer_logo_one} />
 					<p className="footer-text">
 						At Studio Nivvani, we bring your vision <br />
 						to life- from homes to commercial <br /> spaces,styling to
@@ -35,7 +36,7 @@ const Footer = () => {
 				<div className="footer-subsection site-contact">
 					<li className="contact-section-link">Contact Information</li>
 					<li className="contact-section-link">
-						<img className="contact-icon" src={mail} /> studionivvani@gmail.com
+						<img className="contact-icon" src={mail} /> <p> studionivvani@gmail.com </p>
 					</li>
 					<li className="contact-section-link">
 						<a

@@ -14,16 +14,15 @@ const AboutUs = () => {
 					<div className="text-div">
 						Every project we undertake is a thoughtful expression of the
 						client’s personality and vision, meticulously crafted to complement
-						their lifestyle, <br />
-						aspirations and practical needs.
+						their lifestyle,aspirations and practical needs.
 					</div>
 					<br />
 					<div className="text-div">
-						We believe every space should be unique, comfortable, functional and
-						visually captivating while remaining achievable within a realistic budget.By
-						seamlessly blending creativity with practicality, we ensure that
-						that beauty and function go hand-in-hand,without compromising on
-						financial considerations.
+						We believe every space should be unique, comfortable, functional, 
+						and visually captivating while remaining achievable within a realistic budget. 
+						By seamlessly blending creativity with practicality, 
+						we ensure that beauty and function go hand in hand, 
+						without compromising on financial considerations.
 					</div>
 					<br />
 					<div className="text-div">
@@ -35,13 +34,13 @@ const AboutUs = () => {
 					<br />
 					<div className="text-div">
 						Guided by sensitivity to people,materials,place and time we design
-						environments that transcend mere structures,become more
-						meaningful,timeless extension of the people who experience them.{" "}
+						environments that transcend mere structures and become more
+						meaningful,timeless extensions of the people who experience them.{" "}
 					</div>
 					<br />
 					<div className="aboutUs-btn">
 						<Link to="/about">
-						<button className="aboutUsBtn">LEARN MORE</button>
+							<button className="aboutUsBtn">LEARN MORE</button>
 						</Link>
 					</div>
 				</div>
