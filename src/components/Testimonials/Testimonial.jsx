@@ -5,7 +5,7 @@ import rishin_patel from "../../assets/Testimonials/Rishin.jpeg";
 import rawats from "../../assets/Testimonials/rawats.jpeg";
 import vimisha_patel from "../../assets/Testimonials/Vimisha.jpeg";
 import quote from "../../assets/Testimonials/Quotes.png";
-import rishin_one from "../../assets/Testimonials/rishin_one.jpeg";
+import rishin_one from "../../assets/Testimonials/Rishin_one.jpeg";
 
 const cards = [
 	{
