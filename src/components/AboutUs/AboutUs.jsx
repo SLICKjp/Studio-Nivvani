@@ -19,7 +19,7 @@ const AboutUs = () => {
 					<br />
 					<div className="text-div">
 						We believe every space should be unique, comfortable, functional,
-						and visually captivating while remaining achievable within a
+						and visually captivating — while remaining achievable within a
 						realistic budget. By seamlessly blending creativity with
 						practicality, we ensure that beauty and function go hand in hand,
 						without compromising on financial considerations.
@@ -35,7 +35,7 @@ const AboutUs = () => {
 					<div className="text-div">
 						Guided by sensitivity to people, materials, place and time we design
 						environments that transcend mere structures and become more
-						meaningful, a timeless extensions of the people who experience them.{" "}
+						meaningful, a timeless extension of the people who experience them.{" "}
 					</div>
 					<br />
 					<div className="aboutUs-btn">

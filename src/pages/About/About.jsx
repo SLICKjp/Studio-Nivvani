@@ -127,7 +127,7 @@ const About = () => {
 
 						<div className="studio-subtext-container">
 							<p className="studio-subtext-one">
-								An architect by education, an interior designer by passion—Jaini
+								An architect by education and an interior designer by passion—Jaini
 								Joshi brings over 18 years of expertise in crafting
 								transformative spaces. With global experience across the US and
 								India, she blends diverse styles to deliver designs that are
