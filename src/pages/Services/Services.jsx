@@ -106,7 +106,7 @@ const Services = () => {
 			servicePoints: [
 				"Customized Design Plan",
 				"Floor Plans & Furniture Layouts",
-				"Mood Board & color palette",
+				"Mood Board & Color Palette",
 				"Product Sourcing with Shoppable Links",
 				"Styling Guide for Implementation",
 			],
@@ -138,14 +138,14 @@ const Services = () => {
 			serviceNumber: 6,
 			serviceHeader: "Style That Helps Your Space Sell",
 			serviceData:
-			"Getting your property ready to list ? We highlight your home's best features using light styling, layout optimization, and neutral visual appeal — so buyers can instantly see its potential.",
+				"Getting your property ready to list? We highlight your home's best features using light styling, layout optimization, and neutral visual appeal — so buyers can instantly see its potential.",
 			servicePoints: [
 				"Furniture Layout for Flow & Function",
 				"Light Decor & Accent Styling",
 				"Art & Accessory Placement",
 				"Color Neutralization & Mood Setting",
 				"On-Site Styling for Showings & Photos",
-				"Decor Sourcing (as per need)",
+				"Decor Sourcing (as needed)",
 			],
 			serviceFooter:
 				"Perfect for real estate listings, open houses, show flats, and Airbnb prep.",
@@ -178,7 +178,7 @@ const Services = () => {
 		{
 			title: "Discovery & Consultation",
 			description:
-				"We understand clients requirements, intentions, style, and ensure safety, budget and timeline",
+				"We understand clients' requirements, intentions, style, and ensure safety, budget and timeline.",
 			image: process1,
 		},
 		{
@@ -192,13 +192,13 @@ const Services = () => {
 		{
 			title: "Design and Detail",
 			description:
-				"We finalize designs, materials,and specifications-balancing creativity with cost effectiveness",
+				"We finalize designs, materials,and specifications — balancing creativity with cost effectiveness",
 			image: process3,
 		},
 		{
 			title: "Execution and Installation",
 			description:
-				"We manage execution with trusted teams, maintaining quality, timelines,and budget control",
+				"We manage execution with trusted teams, maintaining quality, timelines, and budget control",
 			image: process4,
 		},
 		{
