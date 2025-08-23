@@ -8,27 +8,32 @@ import "./contact.css";
 
 const ContactUs = () => {
   const form = useRef();
- 
+
 
   const sendEmail = (e) => {
 
     e.preventDefault();
- 
+
     const countryCode = form.current.country_code.value;
     const phone = form.current.user_phone.value.trim();
-    const fullPhone = `${countryCode} ${phone}`;
+   const fullPhone = countryCode && phone ? `${countryCode} ${phone}` : "";
 
     const phoneRegexByCountry = {
-    "+91": /^[6-9]\d{9}$/,        // India: 10 digits, starts with 6-9
-    "+1": /^\d{10}$/,             // USA: 10 digits
-    "+61": /^\d{9}$/              // Australia: 9 digits (excluding leading 0)
-  };
+      "+91": /^[6-9]\d{9}$/,                // India: 10 digits, starts with 6–9
+      "+1": /^(?:[2-9]\d{2}[2-9]\d{6})$/,   // US: 10 digits, first digit of area code and exchange can’t be 0/1
+      "+61": /^[2-478]\d{8}$/               // Australia: 9 digits, first digit rules
+    };
 
-const selectedRegex = phoneRegexByCountry[countryCode];
-
-  if (phone && !selectedRegex.test(phone)) {
-    alert("Please enter a valid phone number for the selected country.");
-    return;
+    if (countryCode) {
+    if (!phone) {
+      alert("Please enter a phone number for the selected country.");
+      return;
+    }
+    const selectedRegex = phoneRegexByCountry[countryCode];
+    if (!selectedRegex.test(phone)) {
+      alert("Please enter a valid phone number for the selected country.");
+      return;
+    }
   }
 
     const templateParams = {
@@ -81,50 +86,51 @@ const selectedRegex = phoneRegexByCountry[countryCode];
               Full Name <span className="contact-asterik">*</span>
             </label>
             <p>
-              <input 
-              className="contact-box"
-              type="text" 
-              name="fullName" 
-              required
-              pattern="[A-Za-z\s'-]{2,}"
-              title="Please enter a valid name"
+              <input
+                className="contact-box"
+                type="text"
+                name="fullName"
+                required
+                pattern="[A-Za-z\s'-]{2,}"
+                title="Please enter a valid name"
               />
-             
+
             </p>
 
             <label>
               Email <span className="contact-asterik">*</span>
             </label>
             <p>
-              <input 
-              className="contact-box" 
-              type="email" 
-              name="email" 
-              required 
-              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-              title="Please enter a valid email address"
-              
+              <input
+                className="contact-box"
+                type="email"
+                name="email"
+                required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                title="Please enter a valid email address"
+
               />
-            
+
             </p>
 
             <label>
               Contact Number
             </label>
             <p>
-              <select name="country_code" className="input-country" required>
+              <select name="country_code" className="input-country">
+                 <option value="">Select Country</option>
                 <option className="contact-form-option" value="+1">🇺🇸 +1 (USA)</option>
                 <option className="contact-form-option" value="+91">🇮🇳 +91 (India)</option>
-                <option className="contact-form-option"value="+61">🇦🇺 +61 (Australia)</option>
+                <option className="contact-form-option" value="+61">🇦🇺 +61 (Australia)</option>
               </select>
               <input
                 className="user_phone"
                 type="tel"
                 name="user_phone"
                 maxLength="15"
-               
+
               />
-             
+
             </p>
 
             <label>
@@ -141,7 +147,7 @@ const selectedRegex = phoneRegexByCountry[countryCode];
                 title="Message should be at least 10 characters long"
                 required
               ></textarea>
-           
+
             </p>
 
             <div className="contact-btn-container">

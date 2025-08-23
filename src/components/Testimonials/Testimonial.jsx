@@ -8,7 +8,7 @@ import rawats_one from "../../assets/Testimonials/rawats_one.jpeg"
 import vimisha_patel from "../../assets/Testimonials/Vimisha.jpeg";
 import quote from "../../assets/Testimonials/Quotes.png";
 import rishin_one from "../../assets/Testimonials/Rishin_one.jpeg";
-import vimisha_one from "../../assets/Testimonials/vimisha_one.jpeg"
+import vimisha_one from "../../assets/Testimonials/Vimisha_one.jpeg"
 
 const cards = [
 	{
