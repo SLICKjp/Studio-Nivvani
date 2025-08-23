@@ -138,7 +138,7 @@ const Services = () => {
 			serviceNumber: 6,
 			serviceHeader: "Style That Helps Your Space Sell",
 			serviceData:
-				"Getting your property ready to list? We highlight your home's best features using light styling, layout optimization, and neutral visual appeal — so buyers can instantly see its potential.",
+				"Getting your property ready to list? We highlight your home's best features using light,styling, layout optimization, and neutral visual appeal — so buyers can instantly see its potential.",
 			servicePoints: [
 				"Furniture Layout for Flow & Function",
 				"Light Decor & Accent Styling",

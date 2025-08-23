@@ -38,6 +38,7 @@
 {
     font-size: 36px;
     color: #725C3A;
+   
 }
 .studio-subtext-container
 {
@@ -53,6 +54,7 @@
     font-weight: lighter;
     font-size: 20px;
 }
+
 .studio-subtext-container p
 {
      color:#725C3A;
@@ -128,7 +130,12 @@
 
 
 /* About Us Jaini Container */
-
+.jaini-title
+{
+     font-size: 36px;
+    color: #725C3A;
+    font-weight: bold;
+}
 .jaini-about-container
 {
     display: flex;
@@ -139,11 +146,24 @@
 .jaini-subtext
 {
     color: #809671;
+    font-weight: bold;
 }
-
+.jaini-subtext-two
+{
+     color:#725C3A;
+    font-weight: lighter;
+    font-size: 20px;
+    font-weight: bold;
+}
 .jaini-about-text-container
 {
     margin: 0px 30px 0px 0px;
     padding-top:20px;
 }
-/* About Us Jaini Container */
+.jaini-text-bold
+{
+    font-weight: bold;
+}
+
+/*
+ About Us Jaini Container */

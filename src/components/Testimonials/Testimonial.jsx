@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import "./testimonial.css";
-import amish_patel from "../../assets/Hero/neptune.jpg";
+import amish_patel from "../../assets/Testimonials/neptune.jpg";
+import amish_patel_one from "../../assets/Testimonials/neptune_one.jpg";
 import rishin_patel from "../../assets/Testimonials/Rishin.jpeg";
 import rawats from "../../assets/Testimonials/rawats.jpeg";
+import rawats_one from "../../assets/Testimonials/rawats_one.jpeg"
 import vimisha_patel from "../../assets/Testimonials/Vimisha.jpeg";
 import quote from "../../assets/Testimonials/Quotes.png";
 import rishin_one from "../../assets/Testimonials/Rishin_one.jpeg";
+import vimisha_one from "../../assets/Testimonials/vimisha_one.jpeg"
 
 const cards = [
 	{
@@ -18,19 +21,19 @@ const cards = [
 		title: "Dr Vimisha Patel",
 		content:
 			"Jaini has been our architect and interior designer for over a decade now, transforming both my clinic and residence with her impeccable sense of style. I truly appreciate her approachability and ability to understand my needs, ensuring that every design feels personal and perfect. She works within your budget while delivering exceptional results, creating spaces you'll absolutely love to live in and offices you will thrive in.",
-		img: vimisha_patel,
+		img: vimisha_one,
 	},
 	{
 		title: "Sinhal and Kamaljeet Rawat",
 		content:
 			"Jaini’s work is simply outstanding! Her designs bring a perfect balance of style and tranquility, turning any space into a serene and elegant retreat. With her keen eye for detail, she creates interiors that feel both luxurious and comforting. We highly recommend her for anyone looking to elevate their space with elegance and warmth!",
-		img: rawats,
+		img: rawats_one,
 	},
 	{
 		title: "Amish Patel (Director, Neptune Realty)",
 		content:
 			"Jaini designed the display home at 'Aaranya Greenwoods'. Every small aspect was thoughtfully created and she has a keen eye for ensuring every detail was converted from vision to reality.The Majority of our clients were very appreciative and loved the whole theme which was 'In Sync with Nature'. I would any day recommend Jaini to anyone who is looking to create the perfect Abode for the entire family.",
-		img: amish_patel,
+		img: amish_patel_one,
 	},
 ];
 

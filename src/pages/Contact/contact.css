@@ -4,12 +4,18 @@
   align-items: center;
   transform: scale(85%);
 }
+input
+{
+  font-size:20px;
+}
 .contact-box {
   border: 2px solid #e4d5bf;
   width: 533px;
   height: 44px;
   margin: 10px 0px 10px 0px;
   border-radius: 6px;
+
+
 }
 .form-heading-text {
   font-size: 30px;
@@ -83,14 +89,14 @@ label {
 }
 .input-country,
 .input-country option {
-  font-family: 'FuturaLtBTLight'; /* or your preferred font */
-  font-size: 1rem; /* match other inputs */
+  font-family: 'FuturaLtBTLight'; 
+  font-size: 1rem; 
 }
 .contact-box,
 .user_phone,
 .contact-textarea {
-  font-size: 1rem;         /* Change font size */
-  padding: 0px 12px;      /* Add space inside the box */
+  font-size: 1.25rem;        
+  padding: 0px 12px;      
   
-  line-height: 1.5;        /* Optional: improve vertical spacing */
+  line-height: 1.5;       
 }

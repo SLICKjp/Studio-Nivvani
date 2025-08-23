@@ -21,9 +21,9 @@ const Footer = () => {
 				</div>
 				<div className="footer-subsection site-links">
 					<Link to="/about">
-						<li className="footer-link">About</li>
+						<li className="footer-link-about">About</li>
 					</Link>
-					<Link>
+					<Link to="/projects">
 						<li className="footer-link">Projects</li>
 					</Link>
 					<Link to="/services">
@@ -36,7 +36,13 @@ const Footer = () => {
 				<div className="footer-subsection site-contact">
 					<li className="contact-section-link">Contact Information</li>
 					<li className="contact-section-link">
-						<img className="contact-icon" src={mail} /> <p> studionivvani@gmail.com </p>
+						<a
+							href="mailto:studionivvani@gmail.com"
+							className=""
+						>
+						<img className="contact-icon" src={mail} />
+						</a> 
+						<p> studionivvani@gmail.com </p>
 					</li>
 					<li className="contact-section-link">
 						<a

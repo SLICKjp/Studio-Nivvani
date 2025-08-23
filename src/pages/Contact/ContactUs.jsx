@@ -26,7 +26,7 @@ const ContactUs = () => {
 
 const selectedRegex = phoneRegexByCountry[countryCode];
 
-  if (!selectedRegex.test(phone)) {
+  if (phone && !selectedRegex.test(phone)) {
     alert("Please enter a valid phone number for the selected country.");
     return;
   }
@@ -109,20 +109,20 @@ const selectedRegex = phoneRegexByCountry[countryCode];
             </p>
 
             <label>
-              Contact Number <span className="contact-asterik">*</span>
+              Contact Number
             </label>
             <p>
               <select name="country_code" className="input-country" required>
-                <option value="+1">🇺🇸 +1 (USA)</option>
-                <option value="+91">🇮🇳 +91 (India)</option>
-                <option value="+61">🇦🇺 +61 (Australia)</option>
+                <option className="contact-form-option" value="+1">🇺🇸 +1 (USA)</option>
+                <option className="contact-form-option" value="+91">🇮🇳 +91 (India)</option>
+                <option className="contact-form-option"value="+61">🇦🇺 +61 (Australia)</option>
               </select>
               <input
                 className="user_phone"
                 type="tel"
                 name="user_phone"
                 maxLength="15"
-                required
+               
               />
              
             </p>
