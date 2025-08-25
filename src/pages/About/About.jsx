@@ -118,8 +118,8 @@ const About = () => {
 
 					<div className="jaini-about-text-container">
 						<h2 className="jaini-title">
-							Meet Our Designer -{" "}
-							<span className="jaini-subtext">Jaini Joshi </span>
+							MEET OUR DESIGNER -{" "}
+							<span className="jaini-subtext">JAINI JOSHI </span>
 						</h2>
 						<p className="jaini-subtext-two">
 							Founder and Principal Designer|Studio Nivvani
@@ -128,7 +128,7 @@ const About = () => {
 						<div className="studio-subtext-container">
 							<p className="jaini-maintext-one">
 								An architect by education and an interior designer by passion,
-								<span className="jaini-text-bold">Jaini Joshi</span> brings a wealth of global experience in shaping transformative spaces.
+								Jaini Joshi brings a wealth of global experience in shaping transformative spaces.
 								Having worked across the US and India, she blends diverse cultural influences to deliver designs
 								that are innovative, practical, and timeless.
 							</p>
@@ -136,10 +136,10 @@ const About = () => {
 								Her design journey began in New York, 
 								where she contributed to a wide range of architectural and interior projects,
 								 gaining invaluable international perspective. 
-								 In 2014, she founded <span className="jaini-text-bold">Studio Nivvani</span> in India with a vision to create spaces that seamlessly integrate aesthetics with functionality.
+								 In 2014, she founded Studio Nivvani in India with a vision to create spaces that seamlessly integrate aesthetics with functionality.
 							</p>
 							<p className="jaini-maintext-three">
-								Her portfolio spans <span className="jaini-text-bold">corporate, residential, and hospitality projects,</span> 
+								Her portfolio spans corporate, residential, and hospitality projects, 
 								each reflecting her signature approach: thoughtful layouts, refined detailing, and a commitment to sustainability.
 								With a versatile eye for design and a deep understanding of spatial flow, Jaini transforms concepts into spaces
 							    that are not only visually striking but also enhance the way people live and work.

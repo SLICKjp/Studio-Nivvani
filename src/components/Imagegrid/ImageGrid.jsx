@@ -25,7 +25,7 @@ const ImageGrid = () => {
 
 			<div className="input-btn-container">
 				<Link to='/projects'>
-				<Button name="VIEW OUR PROJECTS" />
+				<Button name="VIEW GALLERY" />
 				</Link>
 			</div>
 		</div>

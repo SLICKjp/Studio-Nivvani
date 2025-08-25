@@ -23,7 +23,7 @@ const Navbar = () => {
 					<div className={`links ${currentPath === "/about" ? "active" : ""}`}>ABOUT</div>
 				</Link>
 				<Link to="/projects">
-					<div className={`links ${currentPath === "/projects" ? "active" : ""}`}>PROJECTS</div>
+					<div className={`links ${currentPath === "/projects" ? "active" : ""}`}>GALLERY</div>
 				</Link>
 				<Link to="/services">
 					<div className={`links ${currentPath === "/services" ? "active" : ""}`}>SERVICES</div>
