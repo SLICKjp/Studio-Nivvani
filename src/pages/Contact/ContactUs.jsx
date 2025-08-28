@@ -161,7 +161,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <Connect />
+      
       <Footer />
     </>
   );
