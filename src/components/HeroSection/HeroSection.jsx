@@ -6,16 +6,21 @@ import img4 from "../../assets/Hero/hero-1.jpg";
 import img3 from "../../assets/Hero/hero-2.jpg";
 import img2 from "../../assets/Hero/hero-3.jpg";
 import img1 from "../../assets/Hero/hero-4.jpg";
+import img5 from "../../assets/Hero/hero-5.jpg";
+import img6 from "../../assets/Hero/hero-6.jpg";
+import img7 from "../../assets/Hero/hero-7.jpg";
+import img8 from "../../assets/Hero/hero-8.jpg";
+
 import Navbar from "../Navbar/Navbar";
 
 const HeroSection = () => {
-	const images = [img1, img2, img3, img4];
+	const images = [img1, img2, img3, img4, img5, img6, img7, img8];
 	const [current, setCurrent] = useState(0);
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setCurrent((current + 1) % images.length);
-		}, 6000);
+		}, 12000);
 
 		return () => clearTimeout(timer);
 	}, [current]);
@@ -28,7 +33,9 @@ const HeroSection = () => {
 						key={index}
 						src={img}
 						alt={`Slide ${index + 1}`}
-						className={`slide ${current === index ? "active" : ""}`}
+						className={
+							`slide ${current === index ? "active" : ""}` + " hero-img"
+						}
 					/>
 				))}
 
