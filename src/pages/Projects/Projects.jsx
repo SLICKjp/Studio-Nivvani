@@ -15,28 +15,38 @@ const Projects = () => {
 
 	useEffect(() => {
 		const imageModules = import.meta.glob(
-			"../../assets/Projects/Vertical/*.{png,jpg,jpeg,svg}",
+			"../../assets/Projects/Vertical/*.{png,jpg,jpeg,svg,JPG}",
 			{ eager: true }
 		);
 
 		const horizontalImgModules = import.meta.glob(
-			"../../assets/Projects/Horizontal/*.{png,jpg,jpeg,svg}",
+			"../../assets/Projects/Horizontal/*.{png,jpg,jpeg,svg,JPG}",
 			{ eager: true }
 		);
 
-		const loadedImages = Object.entries(imageModules).map(([path, module]) => ({
-			src: module.default,
-			name: path.split("/").pop(),
-			vertical: true,
-		}));
+		const loadedImages = Object.entries(imageModules)
+			.sort(([a], [b]) => {
+				const aNum = parseInt(a.split("/").pop().split(".")[0], 10);
+				const bNum = parseInt(b.split("/").pop().split(".")[0], 10);
+				return aNum - bNum;
+			})
+			.map(([path, module]) => ({
+				src: module.default,
+				name: path.split("/").pop(),
+				vertical: true,
+			}));
 
-		const loadedHorizontalImages = Object.entries(horizontalImgModules).map(
-			([path, module]) => ({
+		const loadedHorizontalImages = Object.entries(horizontalImgModules)
+			.sort(([a], [b]) => {
+				const aNum = parseInt(a.split("/").pop().split(".")[0], 10);
+				const bNum = parseInt(b.split("/").pop().split(".")[0], 10);
+				return aNum - bNum;
+			})
+			.map(([path, module]) => ({
 				src: module.default,
 				name: path.split("/").pop(),
 				vertical: false,
-			})
-		);
+			}));
 
 		const mergedImages = [];
 		let vIndex = 0;
@@ -81,7 +91,6 @@ const Projects = () => {
 								src={mergedImages[i].src}
 								alt={mergedImages[i].name}
 							/>
-							,
 							<img
 								key={i + 1}
 								className="verticalImage"
@@ -120,9 +129,8 @@ const Projects = () => {
 				i += 1;
 			}
 		}
-
-		setTotalImages(renderedImages);
 		console.log(renderedImages);
+		setTotalImages(renderedImages);
 	}, []);
 
 	return (
