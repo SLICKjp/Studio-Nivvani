@@ -153,12 +153,13 @@
      color:#725C3A;
     font-weight: lighter;
     font-size: 20px;
+    margin-bottom:2px;
    
 }
 .jaini-about-text-container
 {
     margin: 0px 30px 0px 0px;
-    padding-top:20px;
+    padding-top:10px;
 }
 .jaini-text-bold
 {
