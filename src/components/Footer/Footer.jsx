@@ -4,7 +4,7 @@ import mail from "../../assets/Footer/mail.png";
 import insta from "../../assets/Footer/insta.png";
 import linkedin from "../../assets/Footer/linkedin.png";
 import { Link } from "react-router-dom";
-import footer_logo_one from "../../assets/Footer/footer_logo_one.png"
+import footer_logo_one from "../../assets/Footer/footer_logo_one.png";
 
 const Footer = () => {
 	return (
@@ -36,12 +36,9 @@ const Footer = () => {
 				<div className="footer-subsection site-contact">
 					<li className="contact-section-link">Contact Information</li>
 					<li className="contact-section-link">
-						<a
-							href="mailto:studionivvani@gmail.com"
-							className=""
-						>
-						<img className="contact-icon" src={mail} />
-						</a> 
+						<a href="mailto:studionivvani@gmail.com" className="">
+							<img className="contact-icon" src={mail} />
+						</a>
 						<p> studionivvani@gmail.com </p>
 					</li>
 					<li className="contact-section-link">
@@ -66,6 +63,16 @@ const Footer = () => {
 			</div>
 			<div className="copyright-text">
 				<p>© Studio Nivvani. All rights reserved</p>
+				<p>
+					<a
+						className="dev-info"
+						href="https://portfolio-website-five-sable-75.vercel.app/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Developed by Jathin Prakash
+					</a>
+				</p>
 			</div>
 		</div>
 	);
