@@ -1,26 +1,43 @@
-
-.grid-title
-{
-    text-align: center;
-    font-size: 36px;
-    color: #725C3A;
+.img-grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0 2%;
+  box-sizing: border-box;
 }
+
+.grid-title {
+  text-align: center;
+  font-size: 36px;
+  color: #725C3A;
+  margin: 2rem 0;
+  transition: font-size 0.3s ease;
+}
+
 .row {
-  /* display: flex;
-  gap:45px;
-  justify-content: center;
-  margin-bottom:40px;
-  margin-top: 20px; */
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  /* allow wrapping if needed */
   justify-content: space-evenly;
   align-items: center;
-  height: 45%;
+  gap: 2%;
   margin: 1% 0;
+  box-sizing: border-box;
 }
-.input-btn-container
-{
+
+.row-img {
+  flex: 1 1 30%;
+  /* grow, shrink, base 30% */
+  max-width: 30%;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.input-btn-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -28,13 +45,22 @@
   margin-top: 2%;
 }
 
-.row-img{
-  width: 30%;
-}
+/* ---------------- Responsive Breakpoints ---------------- */
 
-.img-grid-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  transform: scale(85%);
+/* Below 600px: stack images vertically */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+    /* stack images */
+    align-items: center;
+  }
+
+  .row-img {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+
+  .grid-title {
+    font-size: 28px;
+  }
 }

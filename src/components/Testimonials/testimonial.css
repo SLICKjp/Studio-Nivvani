@@ -91,3 +91,54 @@
     transition: transform 1s ease-in-out;
     /* padding: auto; */
 }
+
+@media (max-width: 850px) {
+    .testimonial-section {
+            height: 750px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 3rem;
+            transform: scale(0.85);
+            /* scale down to 85% */
+            transform-origin: top center;
+            /* keeps it centered */
+            transition: transform 0.3s ease;
+        }
+    
+        /* Optional: scale header and buttons proportionally */
+        .testimonial-header {
+            font-size: 36px;
+        }
+    
+        .testimonial-container {
+            height: 630px;
+        }
+    
+        .testimonial-slider-wrapper {
+            width: 30%;
+        }
+    
+        .testimonial {
+            min-width: 450px;
+            max-width: 450px;
+            height: 580px;
+        }
+}
+
+@media (max-width: 700px) {
+    .testimonial-section {
+        transform: scale(0.65);
+        /* scale down more for small screens */
+    }
+
+}
+
+@media (max-width: 530px) {
+    .testimonial-section {
+        transform: scale(0.5);
+        /* scale down more for small screens */
+    }
+
+}

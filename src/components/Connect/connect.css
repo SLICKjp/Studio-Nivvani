@@ -1,26 +1,77 @@
-.connect-container
-{
+.connect-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
-    transform: scale(85%);
-}
-.connect-heading,.connect-text,.connect-subtext
-{
-   color:#725C3A;
-}
-.connect-heading
-{
-    font-size: 36px;
-}
-.connect-text,.connect-subtext
-{
-    font-size: 24px;
-}
-.connect-btn-container
-{
-    margin:40px 0px 80px 0px;
+    /* default margin for large screens */
+    transform: scale(0.85);
+    /* default scale */
+    transform-origin: top center;
+    transition: all 0.3s ease;
 }
 
+.connect-heading,
+.connect-text,
+.connect-subtext {
+    color: #725C3A;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.connect-heading {
+    font-size: 36px;
+}
+
+.connect-text,
+.connect-subtext {
+    font-size: 24px;
+}
+
+.connect-btn-container {
+    margin: 40px 0px 80px 0px;
+}
+
+/* ---------------- Responsive Breakpoints ---------------- */
+
+/* Between 800px and 600px */
+@media (max-width: 800px) {
+    .connect-container {
+        transform: scale(0.75);
+        margin-top: 0;
+        /* remove top margin */
+    }
+
+    .connect-heading {
+        font-size: 30px;
+    }
+
+    .connect-text,
+    .connect-subtext {
+        font-size: 20px;
+    }
+
+    .connect-btn-container {
+        margin: 30px 0 60px 0;
+    }
+}
+
+/* Below 600px - mobile */
+@media (max-width: 600px) {
+    .connect-container {
+        transform: scale(0.65);
+    }
+
+    .connect-heading {
+        font-size: 26px;
+    }
+
+    .connect-text,
+    .connect-subtext {
+        font-size: 18px;
+    }
+
+    .connect-btn-container {
+        margin: 20px 0 50px 0;
+    }
+}
