@@ -1,7 +1,4 @@
-.about-container
-{
-   
-}
+
 
 /* About Us Studio Container */
 .about-text-container
@@ -48,6 +45,15 @@
     height:515px;
      width:570px;
 }
+.jaini-subtext-container
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    
+     width:570px;
+     color:#725C3A;
+}
 .studio-subtext
 {
     color:#725C3A;
@@ -83,7 +89,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 438px;
+   
     margin:0px 0px 2.5rem 0px;
 }
 .about-services-main-title
@@ -166,5 +172,120 @@
     font-weight: bold;
 }
 
-/*
- About Us Jaini Container */
+/* =============================
+   Responsive Styles
+   ============================= */
+
+/* Tablet screens (768px and below) */
+@media (max-width: 768px) {
+  /* Studio section: stack image and text */
+  .studio-about-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .studio-about-img-container,
+  .studio-subtext-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .studio-about-text-container {
+   
+    text-align: center;
+  }
+
+  .studio-title {
+    font-size: 28px;
+  }
+
+  .studio-subtext-container {
+    font-size: 18px;
+  }
+
+  /* Services section: 2 columns */
+  .about-services-element-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .about-item {
+    flex: 1 1 40%;
+    max-width: 45%;
+  }
+
+  .about-services-main-title {
+    font-size: 28px;
+    margin-bottom: 1rem;
+  }
+
+  /* Jaini section: stack image and text */
+  .jaini-about-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .jaini-about-text-container {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  .jaini-title {
+    font-size: 28px;
+  }
+}
+
+/* Mobile screens (576px and below) */
+@media (max-width: 576px) {
+  /* Studio section */
+  .studio-title {
+    font-size: 24px;
+  }
+
+  .studio-subtext-container {
+    font-size: 16px;
+    margin: 0px 0px 25px 10px;
+  }
+  .jaini-subtext-container
+  {
+    font-size: 16px;
+    margin: 10px 0px 0px 20px;
+    text-align: center;
+    width: 470px;
+  }
+
+  .studio-about-img-container {
+    width: 100%;
+  }
+
+  /* Services section: 1 column */
+  .about-services-element-container {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .about-item {
+    max-width: 90%;
+  }
+
+  .about-services-main-title {
+    font-size: 24px;
+  }
+
+  /* Jaini section */
+  .jaini-title {
+    font-size: 24px;
+  }
+
+  .jaini-subtext-two {
+    font-size: 16px;
+  }
+
+  .jaini-about-text-container {
+    
+  }
+}

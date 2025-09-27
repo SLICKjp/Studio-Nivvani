@@ -125,7 +125,7 @@ const About = () => {
 							Founder and Principal Designer|Studio Nivvani
 						</p>
 
-						<div className="studio-subtext-container">
+						<div className="jaini-subtext-container">
 							<p className="jaini-maintext-one">
 								An architect by education and an interior designer by passion,
 								Jaini Joshi brings a wealth of global experience in shaping transformative spaces.
