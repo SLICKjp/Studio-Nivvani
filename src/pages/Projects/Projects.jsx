@@ -90,12 +90,14 @@ const Projects = () => {
 								className="verticalImage"
 								src={mergedImages[i].src}
 								alt={mergedImages[i].name}
+								loading="lazy"
 							/>
 							<img
 								key={i + 1}
 								className="verticalImage"
 								src={mergedImages[i + 1].src}
 								alt={mergedImages[i + 1].name}
+								loading="lazy"
 							/>
 						</div>
 					);
@@ -109,6 +111,7 @@ const Projects = () => {
 								className="verticalImage"
 								src={mergedImages[i].src}
 								alt={mergedImages[i].name}
+								loading="lazy"
 							/>
 						</div>
 					);
@@ -123,6 +126,7 @@ const Projects = () => {
 							className="horizontalImage"
 							src={mergedImages[i].src}
 							alt={mergedImages[i].name}
+							loading="lazy"
 						/>
 					</div>
 				);
