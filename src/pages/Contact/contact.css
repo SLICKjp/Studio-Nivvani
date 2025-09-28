@@ -133,10 +133,7 @@ label {
   }
 
   .contact-img {
-    width: 80%;
-    max-width: 400px;
-    height: auto;
-    margin-top: 1.5rem;
+    display: none;
   }
 
   .form-heading-text {
@@ -151,7 +148,12 @@ label {
     margin: 1rem auto 0 auto;
   }
 }
-
+@media screen and (max-width: 1140px) {
+.contact-img
+{
+  display: none;
+}
+}
 /* Mobile screens (≤ 576px) */
 @media screen and (max-width: 576px) {
   .contact-heading-one,
@@ -192,10 +194,6 @@ label {
   }
 
   .contact-img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin: 1rem auto 0 auto;
-    display: block;
+   display: none;
   }
 }
