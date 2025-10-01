@@ -218,6 +218,7 @@
 
     .design-process-section{
         height: auto;
+        margin-bottom: 0px;
     }
 }
 
@@ -237,6 +238,14 @@
         font-size: 16px;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    .service-container-1 {
+        height: auto;
+    }
+}
+
+
 
 /* ✅ Extra small (<480px) */
 @media only screen and (max-width: 480px) {

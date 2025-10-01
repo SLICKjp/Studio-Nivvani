@@ -113,7 +113,7 @@
             justify-content: space-around;
             align-items: center;
             margin-bottom: 3rem;
-            transform: scale(0.85);
+            /* transform: scale(0.85); */
             /* scale down to 85% */
             transform-origin: top center;
             /* keeps it centered */
@@ -153,6 +153,15 @@
     }
 }
 
-@media (max-width: 530px) {
-
+@media (max-width: 460px) {
+    .testimonial-header{
+        height: 50px;
+    }
+    .testimonial-section{
+        height: 670px;
+        margin-bottom: 0px;
+    }
+    .testimonial-container-2{
+        transform: scale(0.65);
+    }
 }

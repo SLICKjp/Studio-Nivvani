@@ -67,6 +67,10 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+.about-img-container{
+  height: 665px;
+}
+
 /* ---------------- Responsive Breakpoints ---------------- */
 
 /* Screens 1000px to 751px */
@@ -188,5 +192,17 @@
   .about-img {
     width: 100%;
     margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-img-container{
+    height: 600px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-img-container {
+    height: 500px;
   }
 }

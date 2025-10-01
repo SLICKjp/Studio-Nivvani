@@ -59,7 +59,7 @@
 /* Below 600px - mobile */
 @media (max-width: 600px) {
     .connect-container {
-      
+      margin-top: 1rem;
     }
 
     .connect-heading {
