@@ -75,3 +75,51 @@
     width: 100%;
     height: 100%;
 }
+
+
+
+@media (max-width: 1024px) {
+    .carousel {
+        height: 70vh;
+    }
+    .nav {
+        font-size: 20px;
+        padding: 8px;
+    }
+    .dot {
+        height: 8px;
+        width: 8px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .carousel {
+        height: 55vh; /* reduces vertical size, keeps it landscape */
+    }
+    .nav {
+        font-size: 18px;
+        padding: 6px;
+    }
+    .left {
+        left: 8px;
+    }
+    .right {
+        right: 8px;
+    }
+    .dot {
+        height: 7px;
+        width: 7px;
+        margin: 0 3px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .carousel {
+        height: 45vh;
+    }
+    .nav {
+        font-size: 16px;
+    }
+}
