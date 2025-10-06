@@ -1,170 +1,242 @@
-.about-container
-{
-   
-}
-
 /* About Us Studio Container */
-.about-text-container
-{
+.about-text-container {
     text-align: center;
     font-size: 26px;
     color:#725C3A;
 }
 
-.studio-about-container
-{
+.studio-about-container {
     display: flex;
     justify-content: center;
     margin-top:5rem;
-    
 }
-.studio-about-img-container
-{
+.studio-about-img-container {
     height: 580px;
     width: 500px;
 }
-.studio-about-text-container
-{
+.studio-about-text-container {
     margin: 0px 0px 0px 30px;
     padding-top:20px;
-   
 }
-.studio-image
-{
+.studio-image {
     height: 100%;
     width: 100%;
 }
-.studio-title
-{
+.studio-title {
     font-size: 36px;
     color: #725C3A;
-   
 }
-.studio-subtext-container
-{
+.studio-subtext-container {
     display: flex;
     flex-direction: column;
     font-size: 20px;
     height:515px;
-     width:570px;
+    width:570px;
 }
-.studio-subtext
-{
+.jaini-subtext-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width:570px;
+    color:#725C3A;
+}
+.studio-subtext {
     color:#725C3A;
     font-weight: lighter;
     font-size: 20px;
 }
-
-.studio-subtext-container p
-{
-     color:#725C3A;
+.studio-subtext-container p {
+    color:#725C3A;
 }
-.studio-subtext-one
-{
+.studio-subtext-one {
     margin: 10px 0px 10px 0px;
 }
-.studio-subtext-two
-{
+.studio-subtext-two {
     margin: 0px 0px 10px 0px;
 }
-.studio-subtext-three
-{
+.studio-subtext-three {
     margin: 0px 0px 10px 0px;
 }
 /* About Us Studio Container */
 
 
-
-
-
 /*  5 elements CSS */
-.about-services-main-container
-{
+.about-services-main-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 438px;
-    margin:0px 0px 2.5rem 0px;
+    margin:15px 0px 40px 0px;
 }
-.about-services-main-title
-{
+.about-services-main-title {
     font-size:36px;
     text-align: center;
 }
-
-.about-services-element-container
-{
+.about-services-element-container {
     display: flex;
     justify-content: space-evenly;
     gap:20px;
-    margin: 0px 0px 20px 20px;
-
+    margin: 20px 0px 20px 20px;
 }
-.about-item
-{
+.about-item {
     text-align: center;
 }
-
-.about-item h3
-{
+.about-item h3 {
     font-size: 20px;
 }
-.about-item img
-{
+.about-item img {
    height: 60px;
    width: 60px;
 }
-.about-item p
-{
+.about-item p {
    margin-top:5px
 }
-.image-container
-{
+.image-container {
     display: flex;
-   justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 /*  5 elements CSS */
 
 
-
 /* About Us Jaini Container */
-.jaini-title
-{
-     font-size: 36px;
+.jaini-title {
+    font-size: 36px;
     color: #725C3A;
-    
 }
-.jaini-about-container
-{
+.jaini-about-container {
     display: flex;
     justify-content: center;
     flex-direction:row-reverse;
 }
-
-.jaini-subtext
-{
+.jaini-subtext {
     color: #809671;
-   
 }
-.jaini-subtext-two
-{
-     color:#725C3A;
+.jaini-subtext-two {
+    color:#725C3A;
     font-weight: lighter;
     font-size: 20px;
     margin-bottom:2px;
-   
 }
-.jaini-about-text-container
-{
+.jaini-about-text-container {
     margin: 0px 30px 0px 0px;
     padding-top:10px;
 }
-.jaini-text-bold
-{
+.jaini-text-bold {
     font-weight: bold;
 }
+/* About Us Jaini Container */
 
-/*
- About Us Jaini Container */
+
+/* ===================== Responsive ===================== */
+
+/* Tablet (up to 1024px) */
+/* Tablet (up to 1024px) */
+/* Tablet (up to 1024px) - stacked layout */
+@media (max-width: 1024px) {
+
+    /* Studio Section - image on top, text below */
+    .studio-about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        margin-top: 3rem;
+    }
+
+    .studio-about-img-container {
+        width:50%;
+        height: auto;
+    }
+
+    .studio-about-text-container {
+        width: 90%;
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    .studio-subtext-container {
+        width: 100%;
+        font-size: 18px;
+        height: auto;
+    }
+
+    /* Jaini Section - image on top, text below */
+    .jaini-about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        margin-top: 3rem;
+    }
+
+    .jaini-about-text-container {
+        width: 90%;
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    .jaini-subtext-container {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    /* Central Idea Section (5 items) */
+    .about-services-element-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .about-item {
+        flex: 1 1 45%;
+        max-width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+    .studio-about-container,
+    .jaini-about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .studio-about-text-container,
+    .jaini-about-text-container {
+        margin: 20px 0 0 0;
+        padding: 0 15px;
+    }
+
+    .studio-about-img-container,
+    .jaini-about-container .studio-about-img-container {
+        width: 90%;
+        height: auto;
+    }
+
+    .studio-subtext-container,
+    .jaini-subtext-container {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .studio-title,
+    .jaini-title,
+    .about-services-main-title {
+        font-size: 24px;
+    }
+
+    .about-services-element-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .about-item {
+        max-width: 100%;
+    }
+}

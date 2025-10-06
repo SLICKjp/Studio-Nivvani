@@ -1,53 +1,55 @@
-.hero-services-container
-{
+.hero-services-container {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     min-height: 400px;
     width: 100%;
     position: relative;
     transform: scale(85%);
-}
-.hero-service-img
-{
-    height: 100px;
-    width: 100px;
-    margin: 2.5rem auto;
+    transition: all 0.3s ease;
 }
 
-.hero-service-heading
-{
-    font-size: 30px;
-    height: 12%;
-    text-align: center;
-    margin: 10px 0;
-    color: #725C3A;
-}
-.hero-service-text
-{
-    font-size: 20px;
-    color: #725C3A;
-    text-align: center;
-    height: 40%;
-    line-height: 1.8em;
-   
-}
-.service-container{
+.service-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     width: 30%;
     height: 60%;
     margin-bottom: 2rem;
+    transition: all 0.3s ease;
 }
 
-.divider{
+.hero-service-img {
+    height: 100px;
+    width: 100px;
+    margin: 2.5rem auto;
+    transition: all 0.3s ease;
+}
+
+.hero-service-heading {
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0;
+    color: #725C3A;
+    transition: font-size 0.3s ease;
+}
+
+.hero-service-text {
+    font-size: 20px;
+    color: #725C3A;
+    text-align: center;
+    line-height: 1.8em;
+    transition: font-size 0.3s ease;
+}
+
+.divider {
     height: 52%;
     width: 2px;
     margin: 0 0.5%;
     background-color: #869174;
+    transition: all 0.3s ease;
 }
 
-.divider-container-0{
+.divider-container-0 {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -64,21 +66,61 @@
     height: 100%;
     position: absolute;
     top: 0;
-    right: 33.75%
+    right: 33.75%;
 }
 
-.sectionHeader{
+.sectionHeader {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     color: #725C3A;
     font-size: 36px;
-        /* height: 5%; */
+    margin-bottom: 2rem;
+    transition: font-size 0.3s ease;
 }
 
-/* @media only screen and (min-width: 1920px) {
-    .service-container{
-        height: 40%;
+/* ---------------- Responsive Breakpoints ---------------- */
+
+/* Screens 850px and below */
+@media (max-width: 850px) {
+    .hero-services-container {
+        flex-direction: column;
+        /* stack services vertically */
+        align-items: center;
+        transform: scale(100%);
+        min-height: auto;
     }
-} */
+
+    .service-container {
+        width: 90%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .hero-service-img {
+        height: 80px;
+        width: 80px;
+        margin: 2rem auto;
+    }
+
+    .hero-service-heading {
+        font-size: 26px;
+    }
+
+    .hero-service-text {
+        font-size: 16px;
+        line-height: 1.6em;
+    }
+
+    /* hide dividers */
+    .divider,
+    .divider-container-0,
+    .divider-container-1 {
+        display: none;
+    }
+
+    .sectionHeader {
+        font-size: 32px;
+    }
+}

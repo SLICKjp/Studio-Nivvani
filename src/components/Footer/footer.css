@@ -99,3 +99,13 @@ li {
     -webkit-transition: color 1s ease;
     transition: color 1s ease;
 }
+@media (max-width:780px)
+{
+
+}
+@media (max-width:1200px) {
+  .footer-subcontainer
+  {
+    display: none;
+  }
+}

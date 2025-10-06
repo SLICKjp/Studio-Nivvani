@@ -45,7 +45,7 @@ const AboutUs = () => {
 					</div>
 				</div>
 			</div>
-			<div style={{ height: "665px" }}>
+			<div className="about-img-container">
 				<img className="about-img" src={aboutUsimg} />
 			</div>
 		</div>

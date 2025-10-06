@@ -4,11 +4,11 @@ import amish_patel from "../../assets/Testimonials/neptune.jpg";
 import amish_patel_one from "../../assets/Testimonials/neptune_one.jpg";
 import rishin_patel from "../../assets/Testimonials/Rishin.jpeg";
 import rawats from "../../assets/Testimonials/rawats.jpeg";
-import rawats_one from "../../assets/Testimonials/rawats_one.jpeg"
+import rawats_one from "../../assets/Testimonials/rawats_one.jpeg";
 import vimisha_patel from "../../assets/Testimonials/Vimisha.jpeg";
 import quote from "../../assets/Testimonials/Quotes.png";
 import rishin_one from "../../assets/Testimonials/Rishin_one.jpeg";
-import vimisha_one from "../../assets/Testimonials/Vimisha_one.jpeg"
+import vimisha_one from "../../assets/Testimonials/Vimisha_one.jpeg";
 
 const cards = [
 	{
@@ -38,6 +38,7 @@ const cards = [
 ];
 
 const Testimonial = () => {
+	const [currentIndex1, setCurrentIndex1] = useState(0);
 	const [currentIndex, setCurrentIndex] = useState(0);
 	// const handlePrev = () => {
 	// 	setCurrentIndex((prev) => (prev === 0 ? cards.length - 1 : prev - 1));
@@ -74,20 +75,57 @@ const Testimonial = () => {
 		setCurrentIndex((prev) => (prev - 1 + cards.length) % cards.length);
 	};
 
-	// useEffect(() => {
-	// 	const autoSlide = setInterval(handleNext, 5000);
-	// 	return () => clearInterval(autoSlide);
-	// }, []);
+	const handleNext1 = () => {
+		setCurrentIndex1((prev) => (prev + 1) % cards.length);
+	};
+
+	const handlePrev1 = () => {
+		setCurrentIndex1((prev) => (prev - 1 + cards.length) % cards.length);
+	};
+
+	useEffect(() => {
+		const autoSlide = setInterval(handleNext, 5000);
+		return () => clearInterval(autoSlide);
+	}, []);
 
 	return (
 		<>
 			<div className="testimonial-section">
 				<div className="testimonial-header">CLIENT APPRECIATION</div>
 				<div className="testimonial-container ">
-					<button className="testimonial-btn" onClick={handlePrev}>
+					<button className="testimonial-btn" onClick={handlePrev1}>
 						&#10094;
 					</button>
 
+					<div className="testimonial-slider-wrapper">
+						<div
+							className="testimonial-slider"
+							style={{
+								transform: `translateX(-${
+									(100 / cards.length) * currentIndex1
+								}%)`,
+							}}
+						>
+							{cards.map((card, index) => (
+								<div className="testimonial" key={index}>
+									<div>
+										<img className="quote-img" src={quote} />
+										<p className="testimonial-text">{card.content}</p>
+									</div>
+									<div className="logo-img">
+										<img className="profile-photo" src={card.img} />
+										<h2 className="name">{card.title}</h2>
+									</div>
+								</div>
+							))}
+						</div>
+					</div>
+
+					<button className="testimonial-btn" onClick={handleNext1}>
+						&#10095;
+					</button>
+				</div>
+				<div className="testimonial-container-2 ">
 					<div className="testimonial-slider-wrapper">
 						<div
 							className="testimonial-slider"
@@ -111,10 +149,6 @@ const Testimonial = () => {
 							))}
 						</div>
 					</div>
-
-					<button className="testimonial-btn" onClick={handleNext}>
-						&#10095;
-					</button>
 				</div>
 			</div>
 		</>

@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,42 +7,42 @@
     z-index: 10;
     background: transparent;
     position: sticky;
-}
-.logo{
-    margin:65px;
-    height:56px;
-    width: 273px;
+    padding: 0 20px;
 }
 
-.nav-links{
+.logo {
+    height: 56px;
+    width: 273px;
+    transition: all 0.3s ease;
+}
+
+.nav-links {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
-.links{
+.links {
     margin: 30px;
-    /* color: #869174; */
     color: #725C3A;
     cursor: pointer;
     position: relative;
     padding: 0.5rem 0;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
 }
 
-.links:hover{
+.links:hover {
     color: #869174;
-    transition: 0.5s ease;
 }
 
 .links.active {
- 
-  border-bottom:none; 
-  color: #6C8C6B;
-  
+    color: #6C8C6B;
+    border-bottom: none;
 }
+
 .links::after {
     content: "";
     position: absolute;
@@ -53,6 +53,83 @@
     background-color: #869174;
     transition: width 0.3s ease-in-out;
 }
+
 .links:hover::after {
     width: 100%;
+}
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    color: #725C3A;
+    z-index: 20;
+}
+
+/* Medium responsiveness: 1000px to 600px */
+@media (max-width: 1000px) {
+    .logo {
+        width: 200px;
+        height: 45px;
+    }
+
+    .links {
+        margin: 20px;
+        font-size: 0.9rem;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+}
+
+/* Adjust for screens 750px to 600px */
+@media (max-width: 750px) {
+    .logo {
+        width: 160px;
+        /* further shrink logo */
+        height: 40px;
+    }
+
+    .links {
+        margin: 15px;
+        font-size: 0.85rem;
+    }
+
+    .nav-links {
+        gap: 5px;
+    }
+}
+
+/* Small screens: 600px and below */
+@media (max-width: 600px) {
+    .nav-links {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        height: calc(80vh - 100px);
+        width: 200px;
+        background-color: white;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        z-index: 9;
+    }
+
+    .nav-links.open {
+        transform: translateX(0);
+    }
+
+    .links {
+        margin: 15px 0;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
