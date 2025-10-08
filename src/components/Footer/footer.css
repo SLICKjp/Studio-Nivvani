@@ -101,7 +101,10 @@ li {
 }
 @media (max-width:780px)
 {
-
+  .footer-container
+  {
+    font-size: 17px;
+  }
 }
 @media (max-width:1200px) {
   .footer-subcontainer
