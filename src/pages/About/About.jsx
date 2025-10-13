@@ -122,7 +122,7 @@ const About = () => {
 							<span className="jaini-subtext">JAINI JOSHI </span>
 						</h2>
 						<p className="jaini-subtext-two">
-							Founder and Principal Designer|Studio Nivvani
+							Founder & Principal Designer|Studio Nivvani
 						</p>
 
 						<div className="jaini-subtext-container">
