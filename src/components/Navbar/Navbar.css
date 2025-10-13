@@ -86,9 +86,9 @@
 /* Adjust for screens 750px to 600px */
 @media (max-width: 750px) {
     .logo {
-        width:273px;
+        width:195px;
         /* further shrink logo */
-        height:56px;
+        height:40px;
     }
 
     .links {
