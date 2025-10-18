@@ -83,10 +83,10 @@ const Testimonial = () => {
 		setCurrentIndex1((prev) => (prev - 1 + cards.length) % cards.length);
 	};
 
-	useEffect(() => {
-		const autoSlide = setInterval(handleNext, 5000);
-		return () => clearInterval(autoSlide);
-	}, []);
+	// useEffect(() => {
+	// 	const autoSlide = setInterval(handleNext, 5000);
+	// 	return () => clearInterval(autoSlide);
+	// }, []);
 
 	return (
 		<>
@@ -125,29 +125,42 @@ const Testimonial = () => {
 						&#10095;
 					</button>
 				</div>
-				<div className="testimonial-container-2 ">
-					<div className="testimonial-slider-wrapper">
-						<div
-							className="testimonial-slider"
-							style={{
-								transform: `translateX(-${
-									(100 / cards.length) * currentIndex
-								}%)`,
-							}}
-						>
-							{cards.map((card, index) => (
-								<div className="testimonial" key={index}>
-									<div>
-										<img className="quote-img" src={quote} />
-										<p className="testimonial-text">{card.content}</p>
+				<div className="mobile-div">
+					<div className="mobile-div-btn-container">
+						<button className="testimonial-btn" onClick={handlePrev}>
+							&#10094;
+						</button>
+					</div>
+
+					<div className="testimonial-container-2 ">
+						<div className="testimonial-slider-wrapper">
+							<div
+								className="testimonial-slider"
+								style={{
+									transform: `translateX(-${
+										(100 / cards.length) * currentIndex
+									}%)`,
+								}}
+							>
+								{cards.map((card, index) => (
+									<div className="testimonial" key={index}>
+										<div>
+											<img className="quote-img" src={quote} />
+											<p className="testimonial-text">{card.content}</p>
+										</div>
+										<div className="logo-img">
+											<img className="profile-photo" src={card.img} />
+											<h2 className="name">{card.title}</h2>
+										</div>
 									</div>
-									<div className="logo-img">
-										<img className="profile-photo" src={card.img} />
-										<h2 className="name">{card.title}</h2>
-									</div>
-								</div>
-							))}
+								))}
+							</div>
 						</div>
+					</div>
+					<div className="mobile-div-btn-container">
+						<button className="testimonial-btn" onClick={handleNext}>
+							&#10095;
+						</button>
 					</div>
 				</div>
 			</div>

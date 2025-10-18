@@ -74,6 +74,54 @@ const Footer = () => {
 					</a>
 				</p>
 			</div>
+			<div className="mobile-layout">
+				<div className="mobile-footer-section">
+					<img src={footer_logo_one} className="mobile-footer-logo" />
+
+					<div className="mobile-footer-contact">
+						<a href="mailto:studionivvani@gmail.com" className="">
+							<img className="contact-icon" src={mail} />
+						</a>
+
+						<a
+							className="service-logo"
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://www.instagram.com/studionivvani?igsh=MWl3cDhteDFhM25raQ=="
+						>
+							<img className="contact-icon service-logo" src={insta} />
+						</a>
+						<a
+							className="service-logo"
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://www.linkedin.com/in/jaini-joshi-ab038b184?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+						>
+							<img className="contact-icon service-logo" src={linkedin} />
+						</a>
+					</div>
+
+					<p className="mobile-footer-text">
+						At Studio Nivvani, we bring your vision to life- from homes to
+						commercial spaces,styling to staging-with creative,practical and
+						cost-conscious
+						<br /> design.
+					</p>
+					<div className="mobile-copyright-text">
+						<p>© Studio Nivvani. All rights reserved</p>
+						<p>
+							<a
+								className="dev-info"
+								href="https://portfolio-website-five-sable-75.vercel.app/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Developed by Jathin Prakash
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };
