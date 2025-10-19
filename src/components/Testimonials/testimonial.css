@@ -207,7 +207,7 @@
 @media (max-width: 400px) {
    
     .testimonial-section {
-            height: 1100px;
+            height: 1200px;
             margin-bottom: 0px;
         }
     
@@ -216,7 +216,7 @@
         }
     
         .mobile-div {
-            height: 900px;
+            height: 1000px;
         }
     .testimonial {
         min-width: 340px;
