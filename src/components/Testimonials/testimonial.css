@@ -200,13 +200,14 @@
     }
     .testimonial-section{
         height: 650px;
+        margin-bottom: 0.5rem;
     }
 
 }
 
 @media (max-width: 450px) {
     .mobile-div {
-        transform: scale(0.80);
+        transform: scale(0.75);
         margin-top: -1rem;
     }
         .testimonial-section {
@@ -217,7 +218,7 @@
 
 @media (max-width: 380px) {
     .mobile-div {
-        transform: scale(0.75);
+        transform: scale(0.70);
         margin-top: -1rem;
     }
 
