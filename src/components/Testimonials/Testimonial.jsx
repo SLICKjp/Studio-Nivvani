@@ -126,13 +126,15 @@ const Testimonial = () => {
 					</button>
 				</div>
 				<div className="mobile-div">
-					<div className="mobile-div-btn-container">
-						<button className="testimonial-btn" onClick={handlePrev}>
-							&#10094;
-						</button>
-					</div>
+					<div className="mobile-div-btn-container"></div>
 
 					<div className="testimonial-container-2 ">
+						<button
+							className="testimonial-btn mobile-testimonial-btn-left"
+							onClick={handlePrev}
+						>
+							&#10094;
+						</button>
 						<div className="testimonial-slider-wrapper">
 							<div
 								className="testimonial-slider"
@@ -155,13 +157,15 @@ const Testimonial = () => {
 									</div>
 								))}
 							</div>
+							<button
+								className="testimonial-btn mobile-testimonial-btn-right"
+								onClick={handleNext}
+							>
+								&#10095;
+							</button>
 						</div>
 					</div>
-					<div className="mobile-div-btn-container">
-						<button className="testimonial-btn" onClick={handleNext}>
-							&#10095;
-						</button>
-					</div>
+					<div className="mobile-div-btn-container"></div>
 				</div>
 			</div>
 		</>
