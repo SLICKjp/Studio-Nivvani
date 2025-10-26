@@ -146,7 +146,7 @@ const Testimonial = () => {
 							>
 								{cards.map((card, index) => (
 									<div className="testimonial" key={index}>
-										<div>
+										<div className="testimonial-txt-content">
 											<img className="quote-img" src={quote} />
 											<p className="testimonial-text">{card.content}</p>
 										</div>
