@@ -127,6 +127,7 @@
         transform-origin: top center;
         transition: transform 0.3s ease;
     }
+
     .testimonial-header {
         font-size: 36px;
     }
@@ -197,52 +198,69 @@
 }
 
 @media (max-width: 580px) {
-    .testimonial-container-2{
+    .testimonial-container-2 {
         transform: scale(0.90);
     }
-        .testimonial-btn {
-            font-size: 24px;
-            margin: 2%;
-            border: 1px solid #E5D2B8;
-            height: 45px;
-            width: 55px;
-        }
-    
-        .mobile-testimonial-btn-left {
-            position: absolute;
-            top: 45%;
-            left: 34%;
-            z-index: 100;
-    
-        }
-    
-        .mobile-testimonial-btn-right {
-            position: absolute;
-            top: 45%;
-            right: 34%;
-            z-index: 100;
-    
-        }
+
+    .testimonial-btn {
+        font-size: 24px;
+        margin: 2%;
+        border: 1px solid #E5D2B8;
+        height: 45px;
+        width: 55px;
+    }
+
+    .mobile-testimonial-btn-left {
+        position: absolute;
+        top: 45%;
+        left: 34%;
+        z-index: 100;
+
+    }
+
+    .mobile-testimonial-btn-right {
+        position: absolute;
+        top: 45%;
+        right: 34%;
+        z-index: 100;
+
+    }
 }
 
 @media (max-width: 450px) {
-    .testimonial-container-2{
+    .testimonial-container-2 {
         transform: scale(0.80);
     }
-    .testimonial-text{
+
+    .testimonial-text {
         font-size: 17px;
     }
-    .testimonial-section{
+
+    .testimonial-section {
         height: 630px;
     }
-    .mobile-div{
+
+    .mobile-div {
         height: 620px;
         margin-top: -1.5rem;
+    }
+
+    .mobile-testimonial-btn-left {
+        top: 42%;
+        left: 34%;
+
+
+    }
+
+    .mobile-testimonial-btn-right {
+        top: 42%;
+        right: 34%;
+
     }
 }
 
 @media (max-width: 400px) {
-    .mobile-div{
+    .mobile-div {
         transform: scale(0.85);
     }
 
@@ -250,7 +268,7 @@
         font-size: 17px;
     }
 
-    .testimonial-section{
+    .testimonial-section {
         margin-bottom: 1rem;
     }
 
@@ -284,11 +302,12 @@
         margin-bottom: 1rem;
     }
 
-    .testimonial-section{
+    .testimonial-section {
         height: 580px;
     }
 
 }
+
 /* @media (max-width: 600px) {
     .testimonial-section {
         height: 1000px;
@@ -452,4 +471,4 @@
         height: 950px;
         text-align: center;
     }
-} */ */
+} */
