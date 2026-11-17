@@ -1,0 +1,124 @@
+.hn-testimonials {
+  background: var(--cream);
+}
+
+.hn-testimonials__inner {
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hn-quote {
+  position: relative;
+  margin-top: 36px;
+  width: 100%;
+}
+
+.hn-quote__mark {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(6rem, 12vw, 9rem);
+  line-height: 0.6;
+  height: 0.45em;
+  color: var(--accent-light);
+}
+
+.hn-quote__body {
+  animation: hn-quote-in 0.7s ease both;
+}
+
+.hn-quote__text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.25rem, 2.3vw, 1.75rem);
+  line-height: 1.5;
+  color: var(--ink);
+  max-width: 62ch;
+  margin-inline: auto;
+}
+
+.hn-quote__author {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 36px;
+  text-align: left;
+}
+
+.hn-quote__author img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--line);
+}
+
+.hn-quote__author strong {
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.hn-quote__author em {
+  display: block;
+  font-style: normal;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.hn-quote__nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 44px;
+}
+
+.hn-quote__nav button {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  color: var(--accent);
+  background: none;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.hn-quote__nav button:hover {
+  background: var(--accent);
+  color: var(--cream);
+}
+
+.hn-quote__nav svg {
+  width: 20px;
+  height: 20px;
+}
+
+.hn-quote__count {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--accent);
+  min-width: 4.5em;
+}
+
+@keyframes hn-quote-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hn-quote__body {
+    animation: none;
+  }
+}

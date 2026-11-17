@@ -1,0 +1,54 @@
+.hn-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 30px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.hn-btn__arrow {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.35s ease;
+}
+
+.hn-btn:hover .hn-btn__arrow {
+  transform: translateX(5px);
+}
+
+.hn-btn--solid {
+  background: var(--accent);
+  color: var(--cream);
+}
+.hn-btn--solid:hover {
+  background: var(--ink);
+}
+
+.hn-btn--outline {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.hn-btn--outline:hover {
+  background: var(--accent);
+  color: var(--cream);
+}
+
+.hn-btn--light {
+  border-color: rgba(246, 241, 234, 0.7);
+  color: var(--cream);
+}
+.hn-btn--light:hover {
+  background: var(--cream);
+  border-color: var(--cream);
+  color: var(--ink);
+}

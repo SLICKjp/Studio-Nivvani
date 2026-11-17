@@ -1,423 +1,303 @@
-import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
+import Page from "../../components/Site/Page";
+import PageHero from "../../components/Site/PageHero";
+import { banners } from "../../components/Site/homeContent";
 import "./Services.css";
 import img1 from "../../assets/Service-page/img-1.jpg";
 import img2 from "../../assets/Service-page/img-2.jpg";
 import img3 from "../../assets/Service-page/img-3.jpg";
 import img4 from "../../assets/Service-page/img-4.jpg";
+import img5 from "../../assets/Service-page/img-5.jpg";
+import img6 from "../../assets/Service-page/img-6.jpg";
+import img7 from "../../assets/Service-page/img-7.jpg";
 import corporate from "../../assets/Service-page/corporateSpace.png";
 import healthcare from "../../assets/Service-page/healthcare.png";
 import retail from "../../assets/Service-page/retial.png";
 import industrial from "../../assets/Service-page/industial.png";
-import greenTick from "../../assets/Service-page/greenTick.png";
-import img5 from "../../assets/Service-page/img-5.jpg";
-import img6 from "../../assets/Service-page/img-6.jpg";
-import img7 from "../../assets/Service-page/img-7.jpg";
 import process1 from "../../assets/Service-page/process1.png";
 import process2 from "../../assets/Service-page/process2.png";
 import process3 from "../../assets/Service-page/process3.png";
 import process4 from "../../assets/Service-page/process4.png";
 import process5 from "../../assets/Service-page/process5.png";
-import Service from "../../components/HeroService/Service";
 
-import Footer from "../../components/Footer/Footer";
-import Connect from "../../components/Connect/Connect";
+const sectors = [
+	{ img: corporate, caption: "Corporate Spaces" },
+	{ img: healthcare, caption: "Hospitality & Retail" },
+	{ img: retail, caption: "Healthcare & Education" },
+	{ img: industrial, caption: "Public & Industrial Spaces" },
+];
+
+const groups = [
+	{
+		id: "interior-design",
+		title: "Interior Design",
+		quote: "Every space has a story. We help you tell it beautifully.",
+		intro:
+			"From cozy homes to high-end commercial spaces, we offer comprehensive interior design services tailored to reflect your lifestyle, brand and vision.",
+		services: [
+			{
+				title: "Start-to-finish transformation for your entire space",
+				text: "This all-inclusive service is perfect for clients looking for a complete interior makeover — from the very first idea to the final walkthrough. We manage every detail to ensure a seamless, stress-free experience.",
+				points: [
+					"In-depth design consultation",
+					"Mood boards & concept development",
+					"Space planning & furniture layout",
+					"Sourcing & procurement",
+					"Coordination with contractors & vendors",
+					"On-site installation & styling",
+				],
+				note: "Ideal for full-home projects, new builds, luxury apartments or vacation properties.",
+				img: img1,
+			},
+			{
+				title: "Personalized design, one room at a time",
+				text: "Whether it’s your living room, bedroom or home office, this flexible service is designed for clients seeking expert guidance on specific rooms. Start small and expand as your vision grows.",
+				points: [
+					"Personalized design consultation",
+					"Room layout & space planning",
+					"Paint & lighting recommendations",
+					"Curated shopping list",
+					"Styling guidelines for finishing touches",
+				],
+				note: "Add more rooms at your own pace — build your dream space step by step.",
+				img: img2,
+			},
+			{
+				title: "Functional design that elevates your brand",
+				text: "We create inspiring, high-performance commercial spaces that reflect your brand identity while enhancing productivity and client experience.",
+				points: [
+					"Brand-aligned concept development",
+					"Strategic space planning",
+					"Furniture & finish selection",
+					"Lighting design & ambience planning",
+					"Accessibility & safety compliance",
+				],
+				note: "Perfect for businesses seeking a professional, impactful environment.",
+				img: img3,
+				sectors: true,
+			},
+			{
+				title: "Expert interior design — wherever you are",
+				text: "Our virtual design service offers a convenient, budget-friendly way to access professional design from anywhere. Everything is delivered online, empowering you with a personalized plan and tools to confidently transform your space.",
+				points: [
+					"Customized design plan",
+					"Floor plans & furniture layouts",
+					"Mood board & colour palette",
+					"Product sourcing with shoppable links",
+					"Styling guide for implementation",
+				],
+				note: "Ideal for DIY enthusiasts, remote clients or quick updates on a budget.",
+				img: img4,
+			},
+		],
+	},
+	{
+		id: "styling-staging",
+		title: "Styling & Staging",
+		quote: "Every detail matters.",
+		intro:
+			"Our styling and staging services add the finishing touches that elevate your space and bring your vision to life.",
+		services: [
+			{
+				title: "Styling that speaks your style",
+				text: "The smallest details often make the biggest impact. Whether you’re settling into a new home or just feel like your space needs a refresh, our styling service brings in those finishing touches that make your space feel intentionally yours. We layer in colour, texture, decor and personality — making your home feel cohesive, elevated and welcoming.",
+				points: [
+					"Handpicked accessories & decorative elements",
+					"Artwork & wall styling",
+					"Colour & fabric coordination",
+					"Lighting design & ambience planning",
+					"Final room arrangement & styling support",
+				],
+				note: "Great for everyday living, special events, or just because your space deserves more.",
+				img: img5,
+			},
+			{
+				title: "Style that helps your space sell",
+				text: "Getting your property ready to list? We highlight your home’s best features using light, styling, layout optimization and neutral visual appeal — so buyers can instantly see its potential.",
+				points: [
+					"Furniture layout for flow & function",
+					"Light decor & accent styling",
+					"Art & accessory placement",
+					"Colour neutralization & mood setting",
+					"On-site styling for showings & photos",
+					"Decor sourcing (as needed)",
+				],
+				note: "Perfect for real estate listings, open houses, show flats and Airbnb prep.",
+				img: img6,
+			},
+		],
+	},
+	{
+		id: "renovations",
+		title: "Renovations",
+		quote: "Reviving spaces, redefining living.",
+		intro: "We help you fall in love with your space all over again.",
+		services: [
+			{
+				title: "A fresh take on the spaces you live in",
+				text: "Our interior renovation service focuses on updating and elevating the look, feel and function of your home. Whether it’s reworking layouts, upgrading materials or refining finishes, we guide the entire process — bringing new energy into familiar spaces.",
+				points: [
+					"Design consultation & site assessment",
+					"Space planning & layout optimization",
+					"Material & finish selection",
+					"Contractor & vendor coordination",
+					"Project oversight",
+					"Final styling & handover",
+				],
+				note: "Perfect for kitchen makeovers, bathroom upgrades or a full interior refresh.",
+				img: img7,
+			},
+		],
+	},
+];
+
+const process = [
+	{
+		title: "Discovery & Consultation",
+		text: "We understand your requirements, intentions and style, and ensure safety, budget and timeline.",
+		image: process1,
+	},
+	{
+		title: "Concept Design",
+		text: "We create mood boards, references and style layouts to match your vision and budget.",
+		image: process2,
+	},
+	{
+		title: "Design & Detail",
+		text: "We finalize designs, materials and specifications — balancing creativity with cost-effectiveness.",
+		image: process3,
+	},
+	{
+		title: "Execution & Installation",
+		text: "We manage execution with trusted teams, maintaining quality, timelines and budget control.",
+		image: process4,
+	},
+	{
+		title: "Style & Deliver",
+		text: "We style the space with curated pieces and hand over a fully finished, beautiful environment.",
+		image: process5,
+	},
+];
+
+const Check = () => (
+	<svg className="sv-check" viewBox="0 0 20 20" aria-hidden="true">
+		<path d="m4.5 10.5 3.5 3.5 7.5-8" fill="none" stroke="currentColor" strokeWidth="1.6" />
+	</svg>
+);
 
 const Services = () => {
-	const subtypeArray = [
-		{
-			img: corporate,
-			caption: "Corporate Spaces",
-		},
-		{
-			img: healthcare,
-			caption: "Hospitality & Retail",
-		},
-		{
-			img: retail,
-			caption: "Healthcare and Education",
-		},
-		{
-			img: industrial,
-			caption: "Public and Industrial Spaces",
-		},
-	];
-	const interiorArray = [
-		{
-			serviceNumber: 1,
-			serviceHeader: "Start-to-Finish Transformation for Your Entire Space",
-			serviceData:
-				"This all-inclusive service is perfect for clients looking for a complete interior makeover — from the very first idea to the final walkthrough. We manage every detail to ensure a seamless, stress-free experience.",
-			servicePoints: [
-				"In-depth Design Consultation",
-				"Mood Boards & Concept development",
-				"Space Planning & Furniture Layout",
-				"Sourcing & Procurement",
-				"Coordination with Contractors & Vendors",
-				"On-site Installation & Styling",
-			],
-			serviceImg: img1,
-			serviceFooter:
-				"Ideal for full-home projects, new builds, luxury apartments, or vacation properties.",
-			designSubtype: false,
-			subtype: [corporate, healthcare, retail, industrial],
-		},
-		{
-			serviceNumber: 2,
-			serviceHeader: "Personalized Design, One Room at a Time.",
-			serviceData:
-				"Whether it's your living room, bedroom, or home office, this flexible service is designed for clients seeking expert guidance on specific rooms. Start small and expand as your vision grows.",
-			servicePoints: [
-				"Personalized Design Consultation",
-				"Room Layout & Space Planning",
-				"Paint & Lighting Recommendations",
-				"Curated Shopping List",
-				"Styling Guidelines for Finishing Touches",
-			],
-			serviceFooter:
-				"Add more rooms at your own pace — build your dream space step by step.",
-			serviceImg: img2,
-			designSubtype: false,
-			subtype: [corporate, healthcare, retail, industrial],
-		},
-		{
-			serviceNumber: 3,
-			serviceHeader: "Functional Design that elevates your brand.",
-			serviceData:
-				"We create inspiring, high-performance commercial spaces that reflect your brand identity while enhancing productivity and client experience.",
-			servicePoints: [
-				"Brand-Aligned Concept Development",
-				"Strategic Space Planning",
-				"Furniture & Finish Selection",
-				"Lighting Design & Ambience Planning",
-				"Accessibility & Safety Compliance",
-			],
-			serviceFooter:
-				"Perfect for businesses seeking a professional, impactful environment.",
-			serviceImg: img3,
-			designSubtype: true,
-			subtype: [corporate, healthcare, retail, industrial],
-		},
-		{
-			serviceNumber: 4,
-			serviceHeader: "Expert Interior Design––Wherever You Are.",
-			serviceData:
-				"Our virtual design service offers a convenient, budget-friendly way to access professional design from anywhere. Everything is delivered online, empowering you with a personalized plan and tools to confidently transform your space.",
-			servicePoints: [
-				"Customized Design Plan",
-				"Floor Plans & Furniture Layouts",
-				"Mood Board & Color Palette",
-				"Product Sourcing with Shoppable Links",
-				"Styling Guide for Implementation",
-			],
-			serviceFooter:
-				"Ideal for DIY enthusiasts, remote clients, or quick updates on a budget.",
-			designSubtype: false,
-			serviceImg: img4,
-			subtype: [corporate, healthcare, retail, industrial],
-		},
-		{
-			serviceNumber: 5,
-			serviceHeader: "Styling That Speaks Your Style",
-			serviceData:
-				"The smallest details often make the biggest impact. Whether you're settling into a new home or just feel like your space needs a refresh, our styling service brings in those finishing touches that make your space feel intentionally yours. We layer in color, texture, decor, and personality — making your home feel cohesive, elevated, and welcoming.",
-			servicePoints: [
-				"Handpicked Accessories & Decorative Elements",
-				"Artwork & Wall Styling",
-				"Color & Fabric Coordination",
-				"Lighting Design & Ambience Planning",
-				"Final Room Arrangement & Styling Support",
-			],
-			serviceFooter:
-				"Great for everyday living, special events, or just because your space deserves more.",
-			designSubtype: false,
-			serviceImg: img5,
-			subtype: [corporate, healthcare, retail, industrial],
-		},
-		{
-			serviceNumber: 6,
-			serviceHeader: "Style That Helps Your Space Sell",
-			serviceData:
-				"Getting your property ready to list? We highlight your home's best features using light,styling, layout optimization, and neutral visual appeal — so buyers can instantly see its potential.",
-			servicePoints: [
-				"Furniture Layout for Flow & Function",
-				"Light Decor & Accent Styling",
-				"Art & Accessory Placement",
-				"Color Neutralization & Mood Setting",
-				"On-Site Styling for Showings & Photos",
-				"Decor Sourcing (as needed)",
-			],
-			serviceFooter:
-				"Perfect for real estate listings, open houses, show flats, and Airbnb prep.",
-			designSubtype: false,
-			serviceImg: img6,
-			subtype: [corporate, healthcare, retail, industrial],
-		},
-		{
-			serviceNumber: 7,
-			serviceHeader: "A Fresh Take on the Spaces You Live In.",
-			serviceData:
-				"Our interior renovation service focuses on updating and elevating the look, feel, and function of your home. Whether it's reworking layouts, upgrading materials, or refining finishes, we guide the entire process — bringing new energy into familiar spaces.",
-			servicePoints: [
-				"Design Consultation & Site Assessment",
-				"Space Planning & Layout Optimization",
-				"Material & Finish Selection",
-				"Contractor & Vendor Coordination",
-				"Project Oversight",
-				"Final Styling & Handover",
-			],
-			serviceFooter:
-				"Perfect for kitchen makeovers, bathroom upgrades, or a full interior refresh.",
-			designSubtype: false,
-			serviceImg: img7,
-			subtype: [corporate, healthcare, retail, industrial],
-		},
-	];
+	let counter = 0;
 
-	const servicesProcessArray = [
-		{
-			title: "Discovery & Consultation",
-			description:
-				"We understand clients' requirements, intentions, style, and ensure safety, budget and timeline.",
-			image: process1,
-		},
-		{
-			title: "Concept Design",
-			// description:
-			// 	"We craft mood boards, produce reference images, layouts and style directions to align with your vision and budget",
-			description:
-				"We create mood boards, references, and style layouts to match your vision and budget",
-			image: process2,
-		},
-		{
-			title: "Design and Detail",
-			description:
-				"We finalize designs, materials,and specifications — balancing creativity with cost effectiveness",
-			image: process3,
-		},
-		{
-			title: "Execution and Installation",
-			description:
-				"We manage execution with trusted teams, maintaining quality, timelines, and budget control",
-			image: process4,
-		},
-		{
-			title: "Style and Deliver",
-			description:
-				"We style the space with curated pieces and hand over a fully finished, beautiful environment",
-			image: process5,
-		},
-	];
 	return (
-		<>
-			<Navbar />
-			<div className="services-container">
-				<div className="service-section-header">Interior Design Services</div>
-				<div className="services-quote-section">
-					<p className="quote">
-						"Every space has a story. We help you tell it beautifully."
-					</p>
-					<p className="quote-writeup">
-						From cozy homes to high-end commercial spaces, we offer
-						comprehensive interior design services tailored to reflect <br />{" "}
-						your lifestyle, brand and vision.
-					</p>
+		<Page>
+			<PageHero
+				image={banners.services}
+				eyebrow="Our services"
+				title={
+					<>
+						Every space <em>has a story</em>
+					</>
+				}
+			>
+				From cozy homes to high-end commercial spaces — interior design, styling &amp; staging and renovations
+				tailored to your lifestyle, brand and vision.
+			</PageHero>
+
+			<nav className="sv-jump" aria-label="Service categories">
+				<div className="hn-container sv-jump__inner">
+					{groups.map((g, i) => (
+						<a key={g.id} href={`#${g.id}`}>
+							<span>0{i + 1}</span> {g.title}
+						</a>
+					))}
 				</div>
+			</nav>
 
-				<div className="services-sections">
-					{interiorArray.map((service, index) => {
-						if (service.serviceNumber % 2 === 0) {
+			{groups.map((g, gi) => (
+				<section key={g.id} id={g.id} className={`hn-section sv-group ${gi % 2 ? "sv-group--alt" : ""}`}>
+					<div className="hn-container">
+						<header className="sv-group__head">
+							<p className="hn-eyebrow hn-reveal">0{gi + 1} — Services</p>
+							<h2 className="hn-heading hn-reveal" style={{ "--delay": "0.1s" }}>
+								{g.title}
+							</h2>
+							<p className="sv-group__quote hn-reveal" style={{ "--delay": "0.15s" }}>
+								“{g.quote}”
+							</p>
+							<p className="hn-lead hn-reveal" style={{ "--delay": "0.2s" }}>
+								{g.intro}
+							</p>
+						</header>
+
+						{g.services.map((s) => {
+							counter += 1;
+							const flip = counter % 2 === 0;
 							return (
-								<>
-									<div className="service service-even">
-										<div
-											className={`${
-												service.designSubtype && "subtype-container"
-											} service-container-1`}
-										>
-											{/* {service.serviceData} */}
-											<div
-												className="header-container"
-												style={{
-													display: "flex",
-													flexDirection: "column",
-													justifyContent: "space-evenly",
-												}}
-											>
-												<div className="service-header">
-													{service.serviceHeader}
-												</div>
-												<div className="service-data">
-													{service.serviceData}
-												</div>
-											</div>
+								<article key={s.title} className={`sv-item ${flip ? "sv-item--flip" : ""}`}>
+									<figure className="sv-item__media hn-reveal">
+										<img src={s.img} alt="" loading="lazy" />
+									</figure>
+									<div className="sv-item__body">
+										<span className="sv-item__num hn-reveal">{String(counter).padStart(2, "0")}</span>
+										<h3 className="sv-item__title hn-reveal" style={{ "--delay": "0.05s" }}>
+											{s.title}
+										</h3>
+										<p className="sv-item__text hn-reveal" style={{ "--delay": "0.1s" }}>
+											{s.text}
+										</p>
 
-											{service.designSubtype && (
-												<div className="design-subtype">
-													{subtypeArray.map((subtypeArray) => {
-														return (
-															<div className="subtype">
-																<div>
-																	<img
-																		className="subtype-img"
-																		src={subtypeArray.img}
-																	/>
-																	<p>{subtypeArray.caption}</p>
-																</div>
-															</div>
-														);
-													})}
-												</div>
-											)}
+										{s.sectors && (
+											<ul className="sv-sectors hn-reveal" style={{ "--delay": "0.15s" }}>
+												{sectors.map((sec) => (
+													<li key={sec.caption}>
+														<img src={sec.img} alt="" loading="lazy" />
+														<span>{sec.caption}</span>
+													</li>
+												))}
+											</ul>
+										)}
 
-											<div className="service-list">
-												{service.servicePoints.map((servicePoint) => {
-													return (
-														<>
-															<span className="service-list-item">
-																<img className="greentick" src={greenTick} />{" "}
-																{servicePoint}
-															</span>{" "}
-														</>
-													);
-												})}
-											</div>
-											<div className="service-footer">
-												{service.serviceFooter}
-											</div>
-										</div>
-										<div className="service-img-container">
-											<img className="service-img" src={service.serviceImg} />
-										</div>
+										<ul className="sv-points hn-reveal" style={{ "--delay": "0.2s" }}>
+											{s.points.map((p) => (
+												<li key={p}>
+													<Check />
+													{p}
+												</li>
+											))}
+										</ul>
+										<p className="sv-item__note hn-reveal" style={{ "--delay": "0.25s" }}>
+											{s.note}
+										</p>
 									</div>
-
-									{service.serviceNumber === 4 && (
-										<>
-											<div className="service-section-header">
-												Styling & Staging Services
-											</div>
-											<div className="services-quote-section">
-												<p className="quote">
-													"Every space has a story. We help you tell it
-													beautifully."
-												</p>
-												<p className="quote-writeup">
-													From cozy homes to high-end commercial spaces, we
-													offer comprehensive interior design services tailored
-													to reflect <br /> your lifestyle, brand and vision.
-												</p>
-											</div>
-										</>
-									)}
-
-									{service.serviceNumber === 6 && (
-										<>
-											<div className="service-section-header">Renovations</div>
-											<div className="services-quote-section">
-												<p className="quote">
-													"Reviving Spaces, Redefining Living"
-												</p>
-												<p className="quote-writeup">
-													We help you fall in love with your space all over
-													again
-												</p>
-											</div>
-										</>
-									)}
-								</>
-							);
-						} else {
-							return (
-								<>
-									<div className="service service-odd">
-										<div className="service-img-container">
-											<img className="service-img" src={service.serviceImg} />
-										</div>
-										<div
-											className={`${
-												service.designSubtype && "subtype-container"
-											} service-container-1`}
-										>
-											{/* {service.serviceData} */}
-											<div
-												className="header-container"
-												style={{
-													display: "flex",
-													flexDirection: "column",
-													justifyContent: "space-evenly",
-												}}
-											>
-												<div className="service-header">
-													{service.serviceHeader}
-												</div>
-												<div className="service-data">
-													{service.serviceData}
-												</div>
-											</div>
-
-											{service.designSubtype && (
-												<div className="design-subtype">
-													{subtypeArray.map((subtypeArray) => {
-														return (
-															<div className="subtype">
-																<div>
-																	<img
-																		className="subtype-img"
-																		src={subtypeArray.img}
-																	/>
-																	<p>{subtypeArray.caption}</p>
-																</div>
-															</div>
-														);
-													})}
-												</div>
-											)}
-
-											<div className="service-list">
-												{service.servicePoints.map((servicePoint) => {
-													return (
-														<>
-															<span className="service-list-item">
-																<img className="greentick" src={greenTick} />{" "}
-																{servicePoint}
-															</span>{" "}
-														</>
-													);
-												})}
-											</div>
-											<div className="service-footer">
-												{service.serviceFooter}
-											</div>
-										</div>
-									</div>
-								</>
-							);
-						}
-					})}
-				</div>
-				<div className="design-process-section">
-					<div className="design-process-header">
-						Our Five Step Design Process
-					</div>
-					<div className="process-container">
-						{servicesProcessArray.map((process, index) => {
-							return (
-								<>
-									<Service {...process} />
-									{(index === 0 || index === 1 || index === 3) && (
-										<div className="divider-container">
-											<div className="divider"></div>
-										</div>
-									)}
-								</>
+								</article>
 							);
 						})}
 					</div>
+				</section>
+			))}
+
+			<section className="hn-section sv-process">
+				<div className="hn-container">
+					<div className="sv-process__head">
+						<p className="hn-eyebrow hn-reveal">How we work</p>
+						<h2 className="hn-heading hn-reveal" style={{ "--delay": "0.1s" }}>
+							Our five-step <em>design process</em>
+						</h2>
+					</div>
+					<ol className="sv-steps">
+						{process.map((p, i) => (
+							<li key={p.title} className="sv-step hn-reveal" style={{ "--delay": `${i * 0.1}s` }}>
+								<div className="sv-step__marker">
+									<img src={p.image} alt="" loading="lazy" />
+								</div>
+								<span className="sv-step__num">Step 0{i + 1}</span>
+								<h3 className="sv-step__title">{p.title}</h3>
+								<p className="sv-step__text">{p.text}</p>
+							</li>
+						))}
+					</ol>
 				</div>
-			</div>
-			<Connect />
-			<Footer />
-		</>
+			</section>
+		</Page>
 	);
 };
 

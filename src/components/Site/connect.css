@@ -1,0 +1,60 @@
+.hn-connect {
+  position: relative;
+  padding-block: var(--section);
+  background: var(--ink);
+  color: var(--cream);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* faint architectural line motif */
+.hn-connect::before,
+.hn-connect::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: min(42vw, 520px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(201, 176, 138, 0.16);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.hn-connect::before {
+  left: -14vw;
+}
+.hn-connect::after {
+  right: -14vw;
+}
+
+.hn-connect__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hn-connect__eyebrow {
+  color: var(--accent-light);
+}
+
+.hn-connect__heading {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(2.4rem, 5.5vw, 4.4rem);
+  line-height: 1.05;
+  max-width: 16ch;
+  margin-top: 22px;
+}
+
+.hn-connect__heading em {
+  font-style: italic;
+  color: var(--accent-light);
+}
+
+.hn-connect__quote {
+  max-width: 52ch;
+  margin: 28px 0 44px;
+  color: rgba(246, 241, 234, 0.75);
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
+}
